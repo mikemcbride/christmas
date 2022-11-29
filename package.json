@@ -1,7 +1,7 @@
 {
   "name": "windty",
   "version": "1.0.0",
-  "description": "Simple 11ty template with tailwind",
+  "description": "McBride Christmas website",
   "scripts": {
     "dev": "run-p start:*",
     "start:eleventy": "eleventy --serve",
@@ -27,8 +27,8 @@
     "url": "https://github.com/mikemcbride/christmas/issues"
   },
   "devDependencies": {
-      "@11ty/eleventy": "^1.0.0-beta.8",
-      "@tailwindcss/typography": "^0.5.0-alpha.3",
+      "@11ty/eleventy": "^2.0.0-canary.18",
+      "@tailwindcss/typography": "^0.5.8",
       "autoprefixer": "^10.4.0",
       "cross-env": "^7.0.3",
       "cssnano": "^5.0.12",
