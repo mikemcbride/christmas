@@ -19,6 +19,7 @@ module.exports = {
                     'sans-serif',
                 ],
                 'display': [
+                    'Bangers',
                     'Notulen Display',
                     'Atkinson Hyperlegible',
                     'system-ui',
