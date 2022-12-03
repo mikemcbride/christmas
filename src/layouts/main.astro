@@ -1,0 +1,32 @@
+---
+const { title } = Astro.props;
+import Footer from '../components/Footer.astro';
+import '../styles/site.css';
+---
+
+<html lang="en">
+	<head>
+        <!-- Recommended -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Elements -->
+        <meta charset="utf-8">
+
+        <!-- Meta -->
+        <meta name="description" content="{{ metadata.description }}">
+        <meta name="generator" content="11ty">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Inter&display=swap" rel="stylesheet">
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<title>{title}</title>
+	</head>
+    <body class="font-sans leading-normal tracking-normal bg-white dark:bg-neutral-900 text-neutral-900 dark:text-neutral-100">
+        <main class="px-4 lg:px-0 mx-auto max-w-3xl mt-16 prose-xl prose-neutral lg:prose-2xl dark:prose-invert prose-headings:font-display prose-img:my-0 lg:prose-img:my-0 prose-img:rounded-lg">
+            <slot />
+        </main>
+        <Footer />
+	</body>
+</html>
