@@ -1,5 +1,7 @@
 ---
 import Layout from '../layouts/main.astro';
+import photos from '../data/2022.json';
+import Collage from '../components/Collage.astro';
 ---
 <Layout title="Merry Christmas">
     <h1>Merry Christmas!</h1>
@@ -21,4 +23,5 @@ import Layout from '../layouts/main.astro';
     <p>SO many requests for snacks...like SO many</p>
 
     <p>...and more joy than we ever could have imagined</p>
+    <Collage items={photos} year="2022" />
 </Layout>

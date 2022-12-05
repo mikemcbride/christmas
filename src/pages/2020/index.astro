@@ -1,5 +1,7 @@
 ---
 import Layout from '../../layouts/main.astro';
+import photos from '../../data/2020.json';
+import Collage from '../../components/Collage.astro';
 ---
 <Layout title="Merry Christmas">
     <section>
@@ -74,76 +76,5 @@ import Layout from '../../layouts/main.astro';
 
         <p>While the world seemed to fall apart, we all found our favorite place to be: together.</p>
     </section>
-    <section class="grid gap-2 grid-cols-2 md:grid-cols-3 xl:grid-cols-4 mt-8 mb-16">
-        <img loading="lazy" class="pointer-events-none" src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_faces:center,h_400,q_90,w_400,f_auto/v1/xmas-2020/collage/0.webp">
-        <img loading="lazy" class="pointer-events-none" src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_faces:center,h_400,q_90,w_400,f_auto/v1/xmas-2020/collage/1.webp">
-        <img loading="lazy" class="pointer-events-none" src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_faces:center,h_400,q_90,w_400,f_auto/v1/xmas-2020/collage/2.webp">
-        <img loading="lazy" class="pointer-events-none" src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_faces:center,h_400,q_90,w_400,f_auto/v1/xmas-2020/collage/3.webp">
-        <img loading="lazy" class="pointer-events-none" src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_faces:center,h_400,q_90,w_400,f_auto/v1/xmas-2020/collage/4.webp">
-        <img loading="lazy" class="pointer-events-none" src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_faces:center,h_400,q_90,w_400,f_auto/v1/xmas-2020/collage/5.webp">
-        <img loading="lazy" class="pointer-events-none" src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_faces:center,h_400,q_90,w_400,f_auto/v1/xmas-2020/collage/6.webp">
-        <img loading="lazy" class="pointer-events-none" src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_faces:center,h_400,q_90,w_400,f_auto/v1/xmas-2020/collage/7.webp">
-        <img loading="lazy" class="pointer-events-none" src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_faces:center,h_400,q_90,w_400,f_auto/v1/xmas-2020/collage/8.webp">
-        <img loading="lazy" class="pointer-events-none" src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_faces:center,h_400,q_90,w_400,f_auto/v1/xmas-2020/collage/9.webp">
-        <img loading="lazy" class="pointer-events-none" src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_faces:center,h_400,q_90,w_400,f_auto/v1/xmas-2020/collage/10.webp">
-        <img loading="lazy" class="pointer-events-none" src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_faces:center,h_400,q_90,w_400,f_auto/v1/xmas-2020/collage/11.webp">
-        <img loading="lazy" class="pointer-events-none" src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_faces:center,h_400,q_90,w_400,f_auto/v1/xmas-2020/collage/12.webp">
-        <img loading="lazy" class="pointer-events-none" src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_faces:center,h_400,q_90,w_400,f_auto/v1/xmas-2020/collage/13.webp">
-        <img loading="lazy" class="pointer-events-none" src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_faces:center,h_400,q_90,w_400,f_auto/v1/xmas-2020/collage/14.webp">
-        <img loading="lazy" class="pointer-events-none" src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_faces:center,h_400,q_90,w_400,f_auto/v1/xmas-2020/collage/15.webp">
-        <img loading="lazy" class="pointer-events-none" src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_faces:center,h_400,q_90,w_400,f_auto/v1/xmas-2020/collage/16.webp">
-        <img loading="lazy" class="pointer-events-none" src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_faces:center,h_400,q_90,w_400,f_auto/v1/xmas-2020/collage/17.webp">
-        <img loading="lazy" class="pointer-events-none" src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_faces:center,h_400,q_90,w_400,f_auto/v1/xmas-2020/collage/18.webp">
-        <img loading="lazy" class="pointer-events-none" src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_faces:center,h_400,q_90,w_400,f_auto/v1/xmas-2020/collage/19.webp">
-        <img loading="lazy" class="pointer-events-none" src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_faces:center,h_400,q_90,w_400,f_auto/v1/xmas-2020/collage/20.webp">
-        <img loading="lazy" class="pointer-events-none" src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_faces:center,h_400,q_90,w_400,f_auto/v1/xmas-2020/collage/21.webp">
-        <img loading="lazy" class="pointer-events-none" src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_faces:center,h_400,q_90,w_400,f_auto/v1/xmas-2020/collage/22.webp">
-        <img loading="lazy" class="pointer-events-none" src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_faces:center,h_400,q_90,w_400,f_auto/v1/xmas-2020/collage/23.webp">
-        <img loading="lazy" class="pointer-events-none" src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_faces:center,h_400,q_90,w_400,f_auto/v1/xmas-2020/collage/24.webp">
-        <img loading="lazy" class="pointer-events-none" src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_faces:center,h_400,q_90,w_400,f_auto/v1/xmas-2020/collage/25.webp">
-        <img loading="lazy" class="pointer-events-none" src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_faces:center,h_400,q_90,w_400,f_auto/v1/xmas-2020/collage/26.webp">
-        <img loading="lazy" class="pointer-events-none" src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_faces:center,h_400,q_90,w_400,f_auto/v1/xmas-2020/collage/27.webp">
-        <img loading="lazy" class="pointer-events-none" src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_faces:center,h_400,q_90,w_400,f_auto/v1/xmas-2020/collage/28.webp">
-        <img loading="lazy" class="pointer-events-none" src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_faces:center,h_400,q_90,w_400,f_auto/v1/xmas-2020/collage/29.webp">
-        <img loading="lazy" class="pointer-events-none" src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_faces:center,h_400,q_90,w_400,f_auto/v1/xmas-2020/collage/30.webp">
-        <img loading="lazy" class="pointer-events-none" src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_faces:center,h_400,q_90,w_400,f_auto/v1/xmas-2020/collage/31.webp">
-        <img loading="lazy" class="pointer-events-none" src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_faces:center,h_400,q_90,w_400,f_auto/v1/xmas-2020/collage/32.webp">
-        <img loading="lazy" class="pointer-events-none" src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_faces:center,h_400,q_90,w_400,f_auto/v1/xmas-2020/collage/33.webp">
-        <img loading="lazy" class="pointer-events-none" src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_faces:center,h_400,q_90,w_400,f_auto/v1/xmas-2020/collage/34.webp">
-        <img loading="lazy" class="pointer-events-none" src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_faces:center,h_400,q_90,w_400,f_auto/v1/xmas-2020/collage/35.webp">
-        <img loading="lazy" class="pointer-events-none" src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_faces:center,h_400,q_90,w_400,f_auto/v1/xmas-2020/collage/36.webp">
-        <img loading="lazy" class="pointer-events-none" src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_faces:center,h_400,q_90,w_400,f_auto/v1/xmas-2020/collage/37.webp">
-        <img loading="lazy" class="pointer-events-none" src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_faces:center,h_400,q_90,w_400,f_auto/v1/xmas-2020/collage/38.webp">
-        <img loading="lazy" class="pointer-events-none" src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_faces:center,h_400,q_90,w_400,f_auto/v1/xmas-2020/collage/39.webp">
-        <img loading="lazy" class="pointer-events-none" src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_faces:center,h_400,q_90,w_400,f_auto/v1/xmas-2020/collage/40.webp">
-        <img loading="lazy" class="pointer-events-none" src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_faces:center,h_400,q_90,w_400,f_auto/v1/xmas-2020/collage/41.webp">
-        <img loading="lazy" class="pointer-events-none" src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_faces:center,h_400,q_90,w_400,f_auto/v1/xmas-2020/collage/42.webp">
-        <img loading="lazy" class="pointer-events-none" src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_faces:center,h_400,q_90,w_400,f_auto/v1/xmas-2020/collage/43.webp">
-        <img loading="lazy" class="pointer-events-none" src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_faces:center,h_400,q_90,w_400,f_auto/v1/xmas-2020/collage/44.webp">
-        <img loading="lazy" class="pointer-events-none" src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_faces:center,h_400,q_90,w_400,f_auto/v1/xmas-2020/collage/45.webp">
-        <img loading="lazy" class="pointer-events-none" src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_faces:center,h_400,q_90,w_400,f_auto/v1/xmas-2020/collage/46.webp">
-        <img loading="lazy" class="pointer-events-none" src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_faces:center,h_400,q_90,w_400,f_auto/v1/xmas-2020/collage/47.webp">
-        <img loading="lazy" class="pointer-events-none" src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_faces:center,h_400,q_90,w_400,f_auto/v1/xmas-2020/collage/48.webp">
-        <img loading="lazy" class="pointer-events-none" src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_faces:center,h_400,q_90,w_400,f_auto/v1/xmas-2020/collage/49.webp">
-        <img loading="lazy" class="pointer-events-none" src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_faces:center,h_400,q_90,w_400,f_auto/v1/xmas-2020/collage/50.webp">
-        <img loading="lazy" class="pointer-events-none" src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_faces:center,h_400,q_90,w_400,f_auto/v1/xmas-2020/collage/51.webp">
-        <img loading="lazy" class="pointer-events-none" src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_faces:center,h_400,q_90,w_400,f_auto/v1/xmas-2020/collage/52.webp">
-        <img loading="lazy" class="pointer-events-none" src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_faces:center,h_400,q_90,w_400,f_auto/v1/xmas-2020/collage/53.webp">
-        <img loading="lazy" class="pointer-events-none" src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_faces:center,h_400,q_90,w_400,f_auto/v1/xmas-2020/collage/54.webp">
-        <img loading="lazy" class="pointer-events-none" src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_faces:center,h_400,q_90,w_400,f_auto/v1/xmas-2020/collage/55.webp">
-        <img loading="lazy" class="pointer-events-none" src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_faces:center,h_400,q_90,w_400,f_auto/v1/xmas-2020/collage/56.webp">
-        <img loading="lazy" class="pointer-events-none" src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_faces:center,h_400,q_90,w_400,f_auto/v1/xmas-2020/collage/57.webp">
-        <img loading="lazy" class="pointer-events-none" src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_faces:center,h_400,q_90,w_400,f_auto/v1/xmas-2020/collage/58.webp">
-        <img loading="lazy" class="pointer-events-none" src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_faces:center,h_400,q_90,w_400,f_auto/v1/xmas-2020/collage/59.webp">
-        <img loading="lazy" class="pointer-events-none" src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_faces:center,h_400,q_90,w_400,f_auto/v1/xmas-2020/collage/60.webp">
-        <img loading="lazy" class="pointer-events-none" src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_faces:center,h_400,q_90,w_400,f_auto/v1/xmas-2020/collage/61.webp">
-        <img loading="lazy" class="pointer-events-none" src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_faces:center,h_400,q_90,w_400,f_auto/v1/xmas-2020/collage/62.webp">
-        <img loading="lazy" class="pointer-events-none" src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_faces:center,h_400,q_90,w_400,f_auto/v1/xmas-2020/collage/63.webp">
-        <img loading="lazy" class="pointer-events-none" src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_faces:center,h_400,q_90,w_400,f_auto/v1/xmas-2020/collage/64.webp">
-        <img loading="lazy" class="pointer-events-none" src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_faces:center,h_400,q_90,w_400,f_auto/v1/xmas-2020/collage/65.webp">
-        <img loading="lazy" class="pointer-events-none" src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_faces:center,h_400,q_90,w_400,f_auto/v1/xmas-2020/collage/66.webp">
-        <img loading="lazy" class="pointer-events-none" src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_faces:center,h_400,q_90,w_400,f_auto/v1/xmas-2020/collage/67.webp">
-        <img loading="lazy" class="pointer-events-none" src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_faces:center,h_400,q_90,w_400,f_auto/v1/xmas-2020/collage/68.webp">
-        <img loading="lazy" class="pointer-events-none" src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_faces:center,h_400,q_90,w_400,f_auto/v1/xmas-2020/collage/69.webp">
-    </section>
+    <Collage items={photos} year="2020" />
 </Layout>
