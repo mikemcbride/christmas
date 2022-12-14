@@ -1,27 +1,36 @@
 ---
 import Layout from '../layouts/main.astro';
-import photos from '../data/2022.json';
+import photos from '../data/2020.json';
 import Collage from '../components/Collage.astro';
 ---
 <Layout title="Merry Christmas">
     <h1>Merry Christmas!</h1>
-    <p>a new job for Mike!</p>
-    <p>Rose's 7th birthday</p>
-    <p>very few full nights of sleep</p>
-    <p>COVID</p>
-    <p>Kolbe's 5th birthday</p>
-    <p>Leo's first day of preschool</p>
-    <p>Chiara's graduation from PT and OT</p>
-    <p>our 9th wedding anniversary</p>
-    <p>a jungle gym IN the basement</p>
-    <p>Leo's 4th birthday</p>
-    <p>countless family movie nights</p>
-    <p>Rose and Kolbe's first piano recital</p>
-    <p>Chiara's 2nd birthday</p>
-    <p>Becky's first weekend getaway since having kids</p>
-    <p>an unforgettable family circus halloween costume</p>
-    <p>SO many requests for snacks...like SO many</p>
-
-    <p>...and more joy than we ever could have imagined</p>
+    <p>2022 was packed with excitement. Idk. We can put a little blurb here as an overview. 9th anniversary. Jungle gym in basement. COVID to end the school year. Watched a LOT of Bluey, Paw Patrol, and Encanto. Family circus halloween costume. We can put a few photos below this section with captions that relate to what we write.</p>
+    <h2>Updates!</h2>
+    <p>We'll add photos in here next to each person.</p>
+    <section>
+        <h3>Mike</h3>
+        <p>Mike did stuff. New job. Read a lot of books. Did a lot of dishes (strong correlation there).</p>
+    </section>
+    <section>
+        <h3>Becky</h3>
+        <p>Becky did stuff. CGS certification. Teaching level 2 at St. Clement. Girl scout troop leader. Left us for 4 days.</p>
+    </section>
+    <section>
+        <h3>Rose</h3>
+        <p>Rose did stuff. Girl scout camp. Started 2nd grade. Shelter Buddies. Piano lessons. Gifted program at school. Had her first field trip (to the St. Louis Aquarium)!</p>
+    </section>
+    <section>
+        <h3>Kolbe</h3>
+        <p>Kolbe did stuff. Piano lessons. Preschool again.</p>
+    </section>
+    <section>
+        <h3>Leo</h3>
+        <p>Leo did stuff. Started preschool. Loves working. Loves coloring.</p>
+    </section>
+    <section>
+        <h3>Chiara</h3>
+        <p>Chiara did stuff. Explosion of growth and development (heavy on the development). Graduated from PT and OT.</p>
+    </section>
     <Collage items={photos} year="2022" />
 </Layout>
