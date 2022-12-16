@@ -5,9 +5,12 @@ import Collage from '../../components/Collage.astro';
 ---
 <Layout title="Merry Christmas">
     <h1>Merry Christmas!</h1>
-    <h2>Updates!</h2>
-            <p>Cheers! Leaving this photo here to remind you we need an intro and our cover photo.</p>
-            <img loading="lazy" class="!mt-2 w-full sm:w-48 sm:h-48 object-cover flex-shrink-0 pointer-events-none" src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_face,f_auto,q_90,w_400/v1/xmas-2022/busch.webp">
+    <section>
+        <p>We wish you a Merry Christmas and a Happy New Year. Die Hard is a Christmas movie. Becky is going to put something here but I don't know what it will say yet.</p>
+        <p>Love,<br>The McBrides</p>
+        <img loading="lazy" class="mt-8 w-full pointer-events-none dark:invert" src="https://res.cloudinary.com/mikemcbride/image/upload/c_scale,f_auto,q_90,w_400/v1/xmas-2022/signatures.webp">
+    </section>
+    <hr class="dark:opacity-20">
     <section>
         <h3>Mike</h3>
         <div class="my-12 flex flex-col sm:flex-row gap-6">
@@ -44,11 +47,6 @@ import Collage from '../../components/Collage.astro';
             <p class="!mt-0 flex-1">Chiara is the tiniest and mightiest member of the McBride clan. Early this year she was cleared by cardiology and she has outgrown nearly all of her prematurity complications. She also finished her PT and OT and is happily eating snacks all the live long day. Weighing in at just about 20 pounds, Cheech is still rocking most of her infant wardrobe (and yes - she is still, affectionately, Cheech). Turning two lead to bursts of development and everyone in the family loves witnessing every little milestone accomplishment of our little miracle baby girl. If you have a granola bar to share, she’ll be your best friend.</p>
             <img loading="lazy" class="!mt-2 w-full order-first sm:order-last sm:w-48 sm:h-48 object-cover flex-shrink-0 pointer-events-none" src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_face,f_auto,q_90,w_400/v1/xmas-2022/chiara.webp">
         </div>
-    </section>
-    <hr class="dark:opacity-20">
-    <section>
-        <p>We hope you have a Merry Christmas and a Happy New Year!</p>
-        <p>Love, The McBrides</p>
     </section>
 
     <Collage items={photos} year="2022" />
