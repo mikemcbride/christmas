@@ -1,5 +1,5 @@
 module.exports = {
-    content: ["./src/_includes/**/*.njk", "./src/**/*.html", "./src/**/*.njk"],
+	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
     theme: {
         extend: {
             fontFamily: {
@@ -19,6 +19,7 @@ module.exports = {
                     'sans-serif',
                 ],
                 'display': [
+                    'Bangers',
                     'Notulen Display',
                     'Atkinson Hyperlegible',
                     'system-ui',
@@ -41,4 +42,4 @@ module.exports = {
         extend: {},
     },
     plugins: [require('@tailwindcss/typography')],
-}
+};

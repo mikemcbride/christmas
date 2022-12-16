@@ -1,0 +1,7 @@
+---
+const { items, year } = Astro.props;
+---
+
+<section class="grid gap-2 grid-cols-2 sm:grid-cols-3 xl:grid-cols-4 mt-8 mb-16">
+    { items.map(item => <img loading="lazy" class="pointer-events-none" src={`https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_faces:center,h_300,q_90,w_300,f_auto/v1/xmas-${year}/collage/${item.name}.webp`}>)}
+</section>

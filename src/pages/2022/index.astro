@@ -1,0 +1,54 @@
+---
+import Layout from '../../layouts/main.astro';
+import photos from '../../data/2022.json';
+import Collage from '../../components/Collage.astro';
+---
+<Layout title="Merry Christmas">
+    <h1>Merry Christmas!</h1>
+    <section>
+        <p>2022 went by quicker than we can comprehend. While we’ve started to find our groove with school-aged kids, we’re still learning something new every day. This year rounds out 14.5 years together, 9 years married, 4 beautiful kids on Earth and 2 babies in Heaven. Through every up and down of this year and all the others, we find ourselves grateful for each other, our faith, and each one of you, our dear family and friends. Cheers, and Happy New Year. May 2023 send you many blessings, God-winks, and smiles.</p>
+        <p>Love,<br>The McBrides</p>
+        <img loading="lazy" class="!mt-12 w-full pointer-events-none dark:invert block lg:hidden" src="https://res.cloudinary.com/mikemcbride/image/upload/c_scale,f_auto,q_90,w_400/v1/xmas-2022/signatures.webp">
+        <img loading="lazy" class="!mt-12 w-full pointer-events-none dark:invert hidden lg:block" src="https://res.cloudinary.com/mikemcbride/image/upload/c_scale,f_auto,q_90,w_768/v1/xmas-2022/signatures.webp">
+    </section>
+    <hr class="dark:opacity-20">
+    <section>
+        <h2>Mike</h2>
+        <div class="my-12">
+            <img loading="lazy" class="float-left !mt-2 !mr-4 !mb-1 w-full sm:w-48 sm:h-48 object-cover pointer-events-none" src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_face,f_auto,q_90,w_400/v1/xmas-2022/mike.webp">
+            <p class="!mt-0 flex-1 text-justify">Mike continued working from home this year, and still loves it. After 11.5 great years at WWT, he started at The New York Times in August. No, he didn't become a journalist, and no, he doesn't work on Wordle. It's been a big change but the work has been fun and the work-life balance has been a blessing for the whole family. Thanks to the NYT, he also got to go on his first post-COVID airplane and work trip. Becky doesn’t know if she was more jealous of the NYC trip or the consecutive full nights’ sleep in a hotel. He spent a lot of his free (read: dish washing) time listening to audio books. His actual free time was spent not looking too available because Becky has a lot of house projects on her list. Mike’s favorite thing this year was getting to witness Rose, Kolbe, and Leo begin learning the piano and fill their house with music on the piano he grew up playing.</p>
+        </div>
+
+        <h2>Becky</h2>
+        <div class="my-12">
+            <img loading="lazy" class="float-right !mt-2 !ml-4 !mb-1 w-full order-first sm:order-last sm:w-48 sm:h-48 object-cover pointer-events-none" src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_face,f_auto,q_90,w_400/v1/xmas-2022/becky.webp">
+            <p class="!mt-0 flex-1 text-justify">Becky finished her certification for Level II of <a href="https://www.cgsusa.org" target="_blank" rel="noopener noreferer">Catechesis of the Good Shepherd</a> and is finding so much joy in working in the Atrium this year. She still enjoys being home with the kids (almost always) and really enjoyed her FIRST solo getaway since having kids 7.5 years ago. After 2 full years in their new house, Becky finally has had the time to really organize and make it their Home. With her love for interior design, she’s enjoyed decorating, redecorating, picking paint colors, changing her mind, and finding Mike every time he sits down to relax to ask him to measure something. Her favorite thing this year was seeing all the new stages and seasons of life each kiddo grew into.</p>
+        </div>
+
+        <h2>Rose</h2>
+        <div class="my-12">
+            <img loading="lazy" class="float-left !mt-2 !mr-4 !mb-1 w-full sm:w-48 sm:h-48 object-cover pointer-events-none" src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_face,f_auto,q_90,w_400/v1/xmas-2022/rose.webp">
+            <p class="!mt-0 flex-1 text-justify">Rose is a second grader, is joyfully preparing for her Sacraments, and is way smarter than Mike and Becky were at 7.5 years old. She trained to be a Humane Society Shelter Buddy this summer and reads to pets waiting to find forever homes. She went to multiple Girl Scout Camps (with her fearless Troop Leader: Becky!) And found a love for nature and the outdoors. She even tried horseback riding and canoeing! She started piano lessons and is loving composing her own songs and melodies. If you ask her what she loves, she’d tell you: dogs, big cats, art, and she wants to be an entrepreneur when she grows up. Even at 7 years, Rose still had many firsts this year: she played on a soccer team, performed in a school musical and a gymnastics showcase, went to her first musical at the The Fox (Frozen!), and (not so wonderfully) had her first multi-day hospitalization when she was sick with pneumonia.</p>
+        </div>
+
+        <h2>Kolbe</h2>
+        <div class="my-12">
+            <img loading="lazy" class="float-right !mt-2 !ml-4 !mb-1 w-full order-first sm:order-last sm:w-48 sm:h-48 object-cover pointer-events-none" src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_face,f_auto,q_90,w_400/v1/xmas-2022/kolbe.webp">
+            <p class="!mt-0 flex-1 text-justify">Kolbe is enjoying his second year of preschool, loves learning, and is never done asking questions. He is learning to read, loves writing, and mostly loves being around friends and family. He also started piano lessons and has found a great talent. He plays endlessly at home and performed in two recitals this year! He is the most athletic kid in The McBride bunch, and loves playing outside. He loves off-roading with his bike, playing catch with Dad, and is SUPER close to being able to outrun Rose in a race. Kolbe is full of energy and fun, and has never met a day that wasn’t his best day ever.</p>
+        </div>
+
+        <h2>Leo</h2>
+        <div class="my-12">
+            <img loading="lazy" class="float-left !mt-2 !mr-4 !mb-1 w-full sm:w-48 sm:h-48 object-cover pointer-events-none" src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_face,f_auto,q_90,w_400/v1/xmas-2022/leo.webp">
+            <p class="!mt-0 flex-1 text-justify">Leo started preschool this year and gets to be in the same classroom as Kolbe three days a week. He is absolutely thriving getting to learn and play with friends and can’t wait to go every day next school year. Not an hour goes by that Leo isn’t talking about, asking about, or playing pretend about lawn mowers, leaf blowers, and “buzzers” (string trimmers). Mike and Becky are hoping this obsession lasts until he’s old enough to use the real tools on their yard. Leo loves to love on everyone, most especially his baby sister, and he is still the best snuggler in the family.</p>
+        </div>
+
+        <h2>Chiara</h2>
+        <div class="my-12">
+            <img loading="lazy" class="float-right !mt-2 !ml-4 !mb-1 w-full order-first sm:order-last sm:w-48 sm:h-48 object-cover pointer-events-none" src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_face,f_auto,q_90,w_400/v1/xmas-2022/chiara.webp">
+            <p class="!mt-0 flex-1 text-justify">Chiara is the tiniest and mightiest member of the McBride clan. Early this year she was cleared by cardiology and she has outgrown nearly all of her prematurity complications. She also finished her PT and OT and is happily eating snacks all the live long day. Weighing in at just about 20 pounds, Cheech is still rocking most of her infant wardrobe (and yes - she is still, affectionately, Cheech). Turning two lead to bursts of development and everyone in the family loves witnessing every little milestone accomplishment of our little miracle baby girl. If you have a granola bar to share, she’ll be your best friend.</p>
+        </div>
+    </section>
+
+    <Collage items={photos} year="2022" />
+</Layout>
