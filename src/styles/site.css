@@ -1,3 +1,7 @@
 h1, h2, h3 {
     @apply text-green-700;
 }
+
+::selection {
+    @apply bg-green-200 text-green-900;
+}
