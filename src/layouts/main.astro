@@ -22,10 +22,10 @@ import Footer from '../components/Footer.astro';
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<title>{title}</title>
 	</head>
-    <body class="font-sans leading-normal tracking-normal bg-white dark:bg-neutral-900 text-neutral-900 dark:text-neutral-100">
-        <main class="px-4 lg:px-0 mx-auto max-w-3xl mt-16 prose-xl prose-neutral lg:prose-2xl dark:prose-invert prose-headings:font-display prose-headings:text-green-700 dark:prose-headings:text-green-500 selection:text-green-900 selection:bg-green-200 prose-img:my-0 lg:prose-img:my-0 prose-img:rounded-lg prose-a:text-red-700 dark:prose-a:text-red-400 prose-a:underline">
-            <slot />
-        </main>
-        <Footer />
+        <body class="font-sans leading-normal tracking-normal bg-white dark:bg-neutral-900 text-neutral-900 dark:text-neutral-100 selection:text-green-900 selection:bg-green-200">
+            <main class="px-4 lg:px-0 mx-auto max-w-3xl mt-16 prose-xl prose-neutral lg:prose-2xl dark:prose-invert prose-headings:font-display prose-headings:text-green-700 dark:prose-headings:text-green-500 prose-img:my-0 lg:prose-img:my-0 prose-img:rounded-lg prose-a:text-red-700 dark:prose-a:text-red-400 prose-a:underline">
+                <slot />
+            </main>
+            <Footer />
 	</body>
 </html>
