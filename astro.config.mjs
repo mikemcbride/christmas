@@ -9,6 +9,6 @@ import image from "@astrojs/image";
 // https://astro.build/config
 export default defineConfig({
   integrations: [mdx(), tailwind(), vue(), image({
-        serviceEntryPoint: "@astrojs/image/sharp"
-    })]
+    serviceEntryPoint: "@astrojs/image/sharp"
+  })]
 });

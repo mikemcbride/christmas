@@ -3,6 +3,7 @@
     "compilerOptions": {
         "types": [
             "@astrojs/image/client"
-        ]
+        ],
+        "allowJs": true
     }
 }
