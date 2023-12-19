@@ -1,0 +1,76 @@
+---
+import Layout from '../../layouts/main.astro';
+import photos from '../../data/2023.json';
+import Collage from '../../components/Collage.astro';
+---
+<Layout title="Merry Christmas">
+    <h1>Merry <span class="text-red-600 dark:text-red-400">Christmas!</span></h1>
+    <section>
+        <p class="max-w-4xl">With every up and down, high and low, victory and loss, we've held on to the love of each other and the hope of Jesus. We pray your family feels the love, peace, and joy of this season and of the year ahead!</p>
+        <p>Love,<br>The McBrides</p>
+        <!-- <img loading="lazy" class="!mt-12 w-full pointer-events-none dark:invert block lg:hidden" src="https://res.cloudinary.com/mikemcbride/image/upload/c_scale,f_auto,q_90,w_400/v1/xmas-2023/signatures.webp"> -->
+        <!-- <img loading="lazy" class="!mt-12 w-full pointer-events-none dark:invert hidden lg:block" src="https://res.cloudinary.com/mikemcbride/image/upload/c_scale,f_auto,q_90,w_768/v1/xmas-2023/signatures.webp"> -->
+    </section>
+    <hr class="dark:opacity-20">
+    <section class="mb-24">
+        <div class="grid grid-cols-1 gap-x-8 gap-y-20">
+            <div class="space-y-12 divide-y divide-gray-200 dark:divide-gray-700">
+                <div class="pt-12 flex flex-col gap-10 sm:flex-row">
+                  <img class="aspect-[4/5] w-52 flex-none rounded-2xl object-cover self-start" src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_face,f_auto,q_90,w_400/v1/xmas-2023/mike-and-becky.webp" alt="" />
+                  <div class="flex-auto">
+                    <h2 class="!mt-0">Mike &amp; Becky</h2>
+                    <p>This year we celebrated our 10 year wedding anniversary and still can't believe we're old enough to say that. Our family vacationed in Louisiana, Virginia, and Branson and we've loved all the memories we've made together and with extended family.</p>
+                    <p>Mike continues to work for The New York Times and is enjoying new challenges in his job. He still enjoys working from home, but got to make two trips to NYC this year as well. He stays busy carting the kids around to all their activities, but managed to find some time for himself early in the mornings to start exercising again and hopes to run his second half marathon in 2024. He also got the boys VERY interested in college football (Geaux Tigers!), which might just be his favorite thing he's done as a parent.</p>
+                    <p>Becky is home most days and loves being able to do things like lead Rose's Girl Scout Troop, go to the class parties and field trips, and be there for all the fun as the kids continue to grow and find new activities and passions. She leads an Atrium on Tuesdays at St. Clement and is looking forward to continuing her formation with <a href="https://www.cgsusa.org" target="_blank" rel="noopener noreferer">CGS</a> in the summer of 2024.</p>
+
+                    <p>Mike's favorite thing this year was taking Kolbe and Leo to the LSU vs Mizzou game on his birthday.</p>
+
+                    <p>Becky's favorite thing this year was having more "me-time" when the kids' school days all overlapped once a week.</p>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="pt-12 flex flex-col gap-10 sm:flex-row">
+                  <img class="aspect-[4/5] w-52 flex-none rounded-2xl object-cover self-start" src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_face,f_auto,q_90,w_400/v1/xmas-2023/rose.webp" alt="" />
+                  <div class="flex-auto">
+                    <h2 class="!mt-0">Rose</h2>
+                    <p>Rose moved up to the "big kid" side of the school and is loving 3rd (THIRD?!) grade. Her favorite day of the school week is Monday because it's her day with MOSAICS. Our bright, quirky, loving, gifted, twice-exceptional girl is always working hard to show us the world through her eyes. This Spring, she received her First Reconciliation and First Communion. She loved being able to plan her own private Mass and have her mom as her catechist! She is still loving Girl Scouts and had many fun experiences, including competing in the Powderpuff Derby, going to the Dadd-Daughter Dance, and spending a week this summer at Shady Creek Day Camp. She was hospitalized for a week at the beginning of the year and has been learning to live with a new diagnosis of asthma. With every new challenge, we are always proud and impressed with Rose's resilience.</p>
+                    <p>Rose's favorite thing this year was hiking and playing on a trail in Branson.</p>
+                  </div>
+                </div>
+
+
+                <div class="pt-12 flex flex-col gap-10 sm:flex-row">
+                  <img class="aspect-[4/5] w-52 flex-none rounded-2xl object-cover self-start" src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_face,f_auto,q_90,w_400/v1/xmas-2023/kolbe.webp" alt="" />
+                  <div class="flex-auto">
+                    <h2 class="!mt-0">Kolbe</h2>
+                    <p>Kolbe is SO thrilled to finally be in school full-time as a KINDERGARTNER! He comes home happy everyday, bursting to share what he has learned. He played on a soccer team for the first time and loved it so much he's playing on 2 indoor teams this winter. A highlight of the fall season is when he scored a goal on Becky's birthday. This Spring, Kolbe performed for the National Federation of Music Club's Spring Junior Festival and NGPT's National Guild Auditions. He memorized his piano pieces, completed a music theory exam and received all commendable marks from judges. We are so proud of his commitment and determination.</p>
+                    <p>Kolbe's favorite thing this year was also going to the LSU vs Mizzou game with Dad and Leo.</p>
+                  </div>
+                </div>
+
+                <div class="pt-12 flex flex-col gap-10 sm:flex-row">
+                  <img class="aspect-[4/5] w-52 flex-none rounded-2xl object-cover self-start" src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_face,f_auto,q_90,w_400/v1/xmas-2023/leo.webp" alt="" />
+                  <div class="flex-auto">
+                    <h2 class="!mt-0">leo</h2>
+                    <p>Leo is in his second (and last!) year of preschool and has blossomed into a curious, kind, and fun-loving leader in his classroom. He has found a love for sports and never missed an LSU game if he could help it (just like his dad!). His favorite subject of conversation continues to be lawn mowers, and he has expanded his knowledge with many views of YouTube landscaping videos. Leo has maintained his title as our "sour patch" kid. He loves the color black, playing all the sports in our basement, dressing up as a football player (daily), and telling us about his day. We are so proud of how well Leo loves the people in his life and is always there to be a friend.</p>
+                    <p>Leo's favorite thing this year was, you guessed it... going to the LSU vs Mizzou game with his Dad (and Kolbe).</p>
+                  </div>
+                </div>
+
+
+                <div class="pt-12 flex flex-col gap-10 sm:flex-row">
+                  <img class="aspect-[4/5] w-52 flex-none rounded-2xl object-cover self-start" src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_face,f_auto,q_90,w_400/v1/xmas-2023/chiara.webp" alt="" />
+                  <div class="flex-auto">
+                    <h2 class="!mt-0">chiara</h2>
+                    <p>Chiara had a busy year! She has added endocrinology and genetics to her care team and has been so brave through many X-rays, blood tests, and appointments. While there are a lot of question marks in her future, we know she is happy, healthy, and hitting developmental milestones like a champ! Chiara also underwent a bilateral strabismus repair (eye surgery) this fall and has made a full recovery. She started Kids Morning Out one day a week (which she affectionately calls "Panda School" thanks to their panda mascot) and she might just be the most social out of all the McBride kids. Her favorite color is purple and her favorite thing is stealing her siblings' tablets to watch a show. She has made so many impressive strides this year, but remains our tiny tot at just over 20lbs. We are so proud of her happy attitude through all the things.</p>
+                    <p>Chiara's favorite thing this year was getting to spend time with friends.</p>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <Collage items={photos} year="2023" />
+</Layout>
+
