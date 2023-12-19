@@ -4,6 +4,7 @@
         <button
             v-for="(item, idx) in items"
             :key="idx"
+            class="focus:outline-none focus:ring focus:ring-emerald-500 dark:focus:ring-red-500 rounded-lg"
             @click="showCarousel(idx)">
             <img loading="lazy" class="pointer-events-none" :src="`https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_faces:center,h_600,q_90,w_600,f_auto/v1/xmas-${year}/collage/${item.name}.webp`">
         </button>

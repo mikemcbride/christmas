@@ -19,9 +19,7 @@ module.exports = {
                     'sans-serif',
                 ],
                 'display': [
-                    'Bangers',
-                    'Notulen Display',
-                    'Atkinson Hyperlegible',
+                    'DM Serif Display',
                     'system-ui',
                     'BlinkMacSystemFont',
                     '-apple-system',
