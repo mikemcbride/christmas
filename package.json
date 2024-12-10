@@ -1,28 +1,31 @@
 {
-    "name": "christmas",
-    "type": "module",
-    "version": "0.0.1",
-    "private": true,
-    "scripts": {
-        "dev": "astro dev",
-        "start": "astro dev",
-        "build": "astro build",
-        "preview": "astro preview",
-        "astro": "astro"
-    },
-    "dependencies": {
-        "@astrojs/mdx": "^0.12.0",
-        "@astrojs/tailwind": "^5.0.3",
-        "@astrojs/vue": "^4.0.4",
-        "@tailwindcss/typography": "^0.5.8",
-        "@types/alpinejs": "^3.13.5",
-        "@types/canvas-confetti": "^1.4.3",
-        "astro": "^4.0.6",
-        "autoprefixer": "^10.4.7",
-        "canvas-confetti": "^1.5.1",
-        "postcss": "^8.4.14",
-        "sharp": "^0.33.1",
-        "tailwindcss": "^3.0.24",
-        "vue": "^3.2.45"
-    }
+  "name": "christmas",
+  "type": "module",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "lint": "prettier"
+  },
+  "dependencies": {
+    "@astrojs/mdx": "^0.12.0",
+    "@astrojs/tailwind": "^5.0.3",
+    "@astrojs/vue": "^4.0.4",
+    "@tailwindcss/typography": "^0.5.8",
+    "@types/alpinejs": "^3.13.5",
+    "@types/canvas-confetti": "^1.4.3",
+    "astro": "^4.0.6",
+    "autoprefixer": "^10.4.7",
+    "canvas-confetti": "^1.5.1",
+    "postcss": "^8.4.14",
+    "prettier": "^3.4.2",
+    "prettier-plugin-astro": "^0.14.1",
+    "sharp": "^0.33.1",
+    "tailwindcss": "^3.0.24",
+    "vue": "^3.2.45"
+  }
 }

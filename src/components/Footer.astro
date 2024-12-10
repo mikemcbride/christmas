@@ -2,21 +2,33 @@
 const { year } = Astro.props;
 let years = [];
 // conditionally add the current year to the footer
-if (Astro.url.pathname !== '/' && Astro.url.pathname !== `/${year}`) {
-    years.push(year);
+if (Astro.url.pathname !== "/" && Astro.url.pathname !== `/${year}`) {
+  years.push(year);
 }
 // add all other years to the footer
 for (let i = year - 1; i >= 2020; i--) {
-    years.push(i);
+  years.push(i);
 }
 ---
 
 <footer class="py-16 mt-16 border-t border-emerald-900">
-    <section class="mx-auto max-w-6xl px-4 lg:px-0">
-        <h2 class="font-bold uppercase tracking-widest text-emerald-700 text-sm">Previous years</h2>
-        <ul class="text-xl mt-4 flex items-start flex-wrap gap-4">
-            {years.map(y => (<li><a class="tabular-nums font-medium text-emerald-200 opacity-70 hover:opacity-100" href={`/${y}`}>{y}</a></li>)
-            )}
-        </ul>
-    </section>
+  <section class="mx-auto max-w-6xl px-4 lg:px-0">
+    <h2 class="font-bold uppercase tracking-widest text-emerald-700 text-sm">
+      Previous years
+    </h2>
+    <ul class="text-xl mt-4 flex items-start flex-wrap gap-4">
+      {
+        years.map((y) => (
+          <li>
+            <a
+              class="tabular-nums font-medium text-emerald-200 opacity-70 hover:opacity-100"
+              href={`/${y}`}
+            >
+              {y}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
 </footer>

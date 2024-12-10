@@ -1,9 +1,7 @@
 {
-    "extends": "astro/tsconfigs/base",
-    "compilerOptions": {
-        "types": [
-            "astro/client"
-        ],
-        "allowJs": true
-    }
+  "extends": "astro/tsconfigs/base",
+  "compilerOptions": {
+    "types": ["astro/client"],
+    "allowJs": true
+  }
 }

@@ -1,36 +1,46 @@
 ---
 const { title } = Astro.props;
-import Footer from '../components/Footer.astro';
-import Snow from '../components/Snow.astro';
+import Footer from "../components/Footer.astro";
+import Snow from "../components/Snow.astro";
 const currentYear = 2024;
 ---
 
 <html lang="en">
-    <head>
+  <head>
     <!-- Recommended -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Elements -->
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
 
     <!-- Meta -->
-    <meta name="description" content="{{ metadata.description }}">
-    <meta name="generator" content="11ty">
+    <meta name="description" content="{{ metadata.description }}" />
+    <meta name="generator" content="11ty" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter&display=swap"
+      rel="stylesheet"
+    />
     <!-- Icons -->
     <!-- https://favicon.io/ -->
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎄</text></svg>"/>
-            <title>{title}</title>
-    </head>
-    <body class="font-sans leading-normal tracking-normal bg-[#033527] text-neutral-100 selection:text-emerald-900 selection:bg-emerald-200">
-        <main class="px-4 xl:px-0 mx-auto max-w-6xl mt-16 prose-xl lg:prose-2xl prose-invert prose-headings:font-display prose-headings:lowercase prose-headings:text-red-300 prose-img:my-0 lg:prose-img:my-0 prose-img:rounded-lg prose-a:text-red-300 prose-a:underline prose-hr:border-emerald-900 prose-hr:opacity-90">
-            <Snow />
-            <slot />
-        </main>
-        <Footer year={currentYear} />
-    </body>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎄</text></svg>"
+    />
+    <title>{title}</title>
+  </head>
+  <body
+    class="font-sans leading-normal tracking-normal bg-[#033527] text-neutral-100 selection:text-emerald-900 selection:bg-emerald-200"
+  >
+    <main
+      class="px-4 xl:px-0 mx-auto max-w-6xl mt-16 prose-xl lg:prose-2xl prose-invert prose-headings:font-display prose-headings:lowercase prose-headings:text-red-300 prose-img:my-0 lg:prose-img:my-0 prose-img:rounded-lg prose-a:text-red-300 prose-a:underline prose-hr:border-emerald-900 prose-hr:opacity-90"
+    >
+      <Snow />
+      <slot />
+    </main>
+    <Footer year={currentYear} />
+  </body>
 </html>
