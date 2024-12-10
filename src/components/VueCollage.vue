@@ -6,20 +6,20 @@
             :key="idx"
             class="focus:outline-none focus:ring focus:ring-emerald-500 dark:focus:ring-red-500 rounded-lg"
             @click="showCarousel(idx)">
-            <img loading="lazy" class="pointer-events-none" :src="`https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_faces:center,h_600,q_90,w_600,f_auto/v1/xmas-${year}/collage/${item.name}.webp`">
+            <img loading="lazy" class="pointer-events-none opacity-80" :src="`https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_faces:center,h_600,q_90,w_600,f_auto/v1/xmas-${year}/collage/${item.name}.webp`">
         </button>
         <div v-show="open" class="h-screen w-screen fixed inset-0 flex flex-col items-center justify-center">
-            <button class="h-screen w-screen absolute inset-0 z-0 bg-black bg-opacity-90" @click="toggle()"></button>
-            <div class="relative flex gap-8 items-center justify-center flex-col px-4">
-                <div class="flex w-full justify-end mb-8">
-                    <button class="text-white text-4xl p-2" @click="toggle()">&times;</button>
+            <button class="h-screen w-screen absolute inset-0 z-0 bg-emerald-900 bg-opacity-90" @click="toggle()"></button>
+            <div class="relative flex gap-6 items-center justify-center flex-col px-4">
+                <div class="flex w-full justify-end">
+                    <button class="text-white p-2 opacity-60 hover:opacity-100" @click="toggle()"><IconClose class="h-8 w-8" /></button>
                 </div>
                 <img
-                    class="pointer-events-none max-w-full"
+                    class="pointer-events-none max-w-full ring-4 ring-emerald-200 ring-opacity-60"
                     :src="`https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_faces:center,h_600,q_90,w_600,f_auto/v1/xmas-${year}/collage/${activeItem.name}.webp`">
-                <div class="flex items-center justify-between w-full lg:max-w-lg mx-auto">
-                    <button @click="loadPrevious()" class="bg-white text-black rounded text-base px-3 py-2">&lt; Prev</button>
-                    <button @click="loadNext()" class="bg-white text-black rounded text-base px-3 py-2">Next &gt;</button>
+                <div class="flex items-center justify-between w-full mx-auto">
+                    <button @click="loadPrevious()" class="inline-flex items-center gap-2 text-white rounded text-sm px-3 py-2 opacity-80 hover:opacity-100"><ArrowIconLeft class="h-6 w-auto" /> Prev</button>
+                    <button @click="loadNext()" class="inline-flex items-center gap-2 text-white rounded text-sm px-3 py-2 opacity-80 hover:opacity-100">Next <ArrowIconRight class="h-6 w-auto" /></button>
                 </div>
             </div>
         </div>
@@ -27,6 +27,10 @@
 </template>
 
 <script>
+import ArrowIconRight from './ArrowIconRight.vue';
+import ArrowIconLeft from './ArrowIconLeft.vue';
+import IconClose from './IconClose.vue';
+
 export default {
     name: 'VueCollage',
     props: {
@@ -38,6 +42,11 @@ export default {
             type: [Number, String],
             required: true
         },
+    },
+    components: {
+        ArrowIconRight,
+        ArrowIconLeft,
+        IconClose,
     },
     data() {
         return {

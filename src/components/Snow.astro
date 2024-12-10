@@ -1,8 +1,8 @@
 <script>
 	const NUMBER_OF_SNOWFLAKES = 100;
 	const MAX_SNOWFLAKE_SIZE = 4;
-	const MAX_SNOWFLAKE_SPEED = 1;
-	const SNOWFLAKE_COLOR = 'rgba(220, 220, 220, 0.5)';
+	const MAX_SNOWFLAKE_SPEED = 0.1;
+	const SNOWFLAKE_COLOR = 'rgba(255, 255, 255, 0.2)';
 
 	const snowflakes = [];
 
@@ -10,7 +10,7 @@
 	canvas.style.position = 'absolute';
 	canvas.style.pointerEvents = 'none';
 	canvas.style.top = '0px';
-	canvas.width = window.innerWidth;
+	canvas.width = document.documentElement.offsetWidth;
 	canvas.height = window.innerHeight;
 	document.body.appendChild(canvas);
 
@@ -60,11 +60,17 @@
 
 
 	window.addEventListener('resize', () => {
-		canvas.width = window.innerWidth;
+		canvas.width = document.documentElement.offsetWidth;
 		canvas.height = window.innerHeight;
 	});
 
-	window.addEventListener('scroll', () => {
-		canvas.style.top = `${window.scrollY}px`;
+	let prevScrollTop = 0;
+	window.addEventListener('scroll', (e) => {
+		// we only care about scroll event if it's a vertical scroll.
+		let st = window.PageYOffset || document.documentElement.scrollTop;
+		if (st !== prevScrollTop) {
+			prevScrollTop = st;
+			canvas.style.top = `${window.scrollY}px`;
+		}
 	});
 </script>

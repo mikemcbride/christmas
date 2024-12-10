@@ -1,20 +1,18 @@
 ---
 import Layout from '../../layouts/main.astro';
-import photos from '../../data/2023.json';
+import photos from '../../data/2024.json';
 import Collage from '../../components/Collage.astro';
 ---
 <Layout title="Merry Christmas">
-    <h1>Merry <span class="text-red-600 dark:text-red-400">Christmas!</span></h1>
+    <h1 class="!text-red-300">Merry Christmas!</h1>
     <section>
         <p class="max-w-4xl">With every up and down, high and low, victory and loss, we've held on to the love of each other and the hope of Jesus. We pray your family feels the love, peace, and joy of this season and of the year ahead!</p>
         <p>Love,<br>The McBrides</p>
-        <!-- <img loading="lazy" class="!mt-12 w-full pointer-events-none dark:invert block lg:hidden" src="https://res.cloudinary.com/mikemcbride/image/upload/c_scale,f_auto,q_90,w_400/v1/xmas-2023/signatures.webp"> -->
-        <!-- <img loading="lazy" class="!mt-12 w-full pointer-events-none dark:invert hidden lg:block" src="https://res.cloudinary.com/mikemcbride/image/upload/c_scale,f_auto,q_90,w_768/v1/xmas-2023/signatures.webp"> -->
     </section>
-    <hr class="dark:opacity-20">
+    <hr>
     <section class="mb-24">
         <div class="grid grid-cols-1 gap-x-8 gap-y-20">
-            <div class="space-y-12 divide-y divide-gray-200 dark:divide-gray-700">
+            <div class="space-y-12 divide-y divide-emerald-900">
                 <div class="pt-12 flex flex-col gap-10 sm:flex-row">
                   <img class="aspect-[4/5] w-52 flex-none rounded-2xl object-cover self-start" src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_face,f_auto,q_90,w_400/v1/xmas-2023/mike-and-becky.webp" alt="" />
                   <div class="flex-auto">

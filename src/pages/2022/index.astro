@@ -2,6 +2,7 @@
 import Layout from '../../layouts/main.astro';
 import photos from '../../data/2022.json';
 import Collage from '../../components/Collage.astro';
+import PopoutImage from '../../components/PopoutImage.astro';
 ---
 <Layout title="Merry Christmas">
     <h1>Merry Christmas!</h1>
@@ -11,7 +12,7 @@ import Collage from '../../components/Collage.astro';
         <img loading="lazy" class="!mt-12 w-full pointer-events-none dark:invert block lg:hidden" src="https://res.cloudinary.com/mikemcbride/image/upload/c_scale,f_auto,q_90,w_400/v1/xmas-2022/signatures.webp">
         <img loading="lazy" class="!mt-12 w-full pointer-events-none dark:invert hidden lg:block" src="https://res.cloudinary.com/mikemcbride/image/upload/c_scale,f_auto,q_90,w_768/v1/xmas-2022/signatures.webp">
     </section>
-    <hr class="dark:opacity-20">
+    <hr>
     <section>
         <h2>Mike</h2>
         <div class="my-12">
