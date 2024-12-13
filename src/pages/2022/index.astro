@@ -1,8 +1,7 @@
 ---
 import Layout from "../../layouts/main.astro";
 import photos from "../../data/2022.json";
-import Collage from "../../components/Collage.astro";
-import PopoutImage from "../../components/PopoutImage.astro";
+import Collage from "../../components/Collage.tsx";
 ---
 
 <Layout title="Merry Christmas">
@@ -165,5 +164,5 @@ import PopoutImage from "../../components/PopoutImage.astro";
     </div>
   </section>
 
-  <Collage items={photos} year="2022" />
+  <Collage client:visible items={photos} year="2022" />
 </Layout>

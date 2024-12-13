@@ -1,42 +1,50 @@
 ---
 import Layout from "../../layouts/main.astro";
 import photos from "../../data/2024.json";
-import Collage from "../../components/Collage.astro";
+import Collage from "../../components/Collage.tsx";
 import PopoutImage from "../../components/PopoutImage.astro";
 ---
 
 <Layout title="Merry Christmas">
-  <h1 class="text-emerald-200">Merry Christmas!</h1>
-  <section>
-    <p class="max-w-4xl">
-      This year we've watched more kids' sports, driven more miles to
-      activities, grown more gray hair, and found SO much joy in our family and
-      this life we're building. We are forever grateful to our friends and our
-      family: our village as we navigate the ups and downs of marriage,
-      parenthood, and (yikes!) our late thirties. Know of our love, gratitude,
-      and prayers now and always.
-    </p>
-
-    <p>Luke 2:13-14</p>
-  </section>
+  <div class="grid grid-flow-row md:grid-flow-col gap-4 md:gap-10">
+    <div>
+      <h1>Merry Christmas!</h1>
+      <section class="flex-1">
+        <p class="max-w-4xl !mt-0">
+          This year we've watched more kids' sports, driven more miles to
+          activities, grown more gray hair, and found SO much joy in our family
+          and this life we're building. We are forever grateful to our friends
+          and our family: our village as we navigate the ups and downs of
+          marriage, parenthood, and (yikes!) our late thirties. Know of our
+          love, gratitude, and prayers for you now and always.
+        </p>
+        <p class="font-display text-emerald-300 text-3xl">Luke 2:13-14</p>
+      </section>
+    </div>
+    <PopoutImage
+      classes="mx-auto"
+      src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_face,f_auto,q_90,w_400/v1/xmas-2024/silly-family.webp"
+    />
+  </div>
   <hr />
   <section class="mb-24">
     <div class="grid grid-cols-1 gap-x-8 gap-y-20">
       <div class="space-y-12 divide-y divide-emerald-900">
         <div class="pt-12 flex flex-col gap-10 sm:flex-row">
           <PopoutImage
+            classes="w-52"
             reverse
-            src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_face,f_auto,q_90,w_400/v1/xmas-2023/mike-and-becky.webp"
+            src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_face,f_auto,q_90,w_400/v1/xmas-2024/mike-and-becky.webp"
           />
           <div class="flex-auto">
             <h2 class="!mt-0">Mike &amp; Becky</h2>
             <p>
               This year we celebrated 11 years of marriage and 16 years
-              together, which is crazy since we're pretty sure we're still 25.
-              We have enjoyed (almost) every moment of this new phase of life
-              with all of our kids out of the baby and toddler stage. Our family
-              enjoyed a vacations to the Wisconsin Dells area and Mike and Becky
-              enjoyed their FIRST solo getaway for weekend in Nashville this
+              together, which is crazy since we're still only 29 years old. We
+              have enjoyed (almost) every moment of this new phase of life with
+              all of our kids out of the baby and toddler stage. Our family
+              enjoyed a vacation to the Wisconsin Dells area and Mike and Becky
+              enjoyed their FIRST solo getaway for a weekend in Nashville this
               Fall.
             </p>
 
@@ -71,14 +79,29 @@ import PopoutImage from "../../components/PopoutImage.astro";
               >.
             </p>
 
-            <p></p>
+            <p>
+              Mike is still enjoying working for the New York Times and loves
+              that he gets to be present for so many of the kids' activities. He
+              took a week-long trip to New York this summer and loved having
+              extra time in the evenings to explore the city a little more (it
+              definitely didn't hurt that he got to do all of that with his
+              friend David). This fall he was an assistant coach for Leo's
+              soccer team (first outoor, and now indoor) and also stepped into a
+              role as the Den Leader for Leo's Cub Scout troop. Both roles have
+              been incredibly rewarding and he has loved being a mentor and
+              leader to the boys.
+            </p>
 
-            <p>One of Mike's favorite things this year was</p>
+            <p>
+              One of Mike's favorite things this year was that Blue Bell finally
+              started selling ice cream in St. Louis.
+            </p>
           </div>
         </div>
 
         <div class="pt-12 flex flex-col gap-10 sm:flex-row">
           <PopoutImage
+            classes="w-52"
             src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_face,f_auto,q_90,w_400/v1/xmas-2024/rose.webp"
           />
           <div class="flex-auto">
@@ -104,6 +127,7 @@ import PopoutImage from "../../components/PopoutImage.astro";
 
         <div class="pt-12 flex flex-col gap-10 sm:flex-row">
           <PopoutImage
+            classes="w-52"
             reverse
             src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_face,f_auto,q_90,w_400/v1/xmas-2024/kolbe.webp"
           />
@@ -126,12 +150,16 @@ import PopoutImage from "../../components/PopoutImage.astro";
               self-motivated and determined humans we have ever met, and we are
               always impressed with his goals and dreams.
             </p>
-            <p>One of Kolbe's favorite things this year was .</p>
+            <p>
+              One of Kolbe's favorite things this year was doing swim team at
+              Big Bend Woods.
+            </p>
           </div>
         </div>
 
         <div class="pt-12 flex flex-col gap-10 sm:flex-row">
           <PopoutImage
+            classes="w-52"
             src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_face,f_auto,q_90,w_400/v1/xmas-2024/leo.webp"
           />
           <div class="flex-auto">
@@ -152,12 +180,16 @@ import PopoutImage from "../../components/PopoutImage.astro";
               at CGS has been a joy. Leo’s kind and caring soul melt us
               everyday.
             </p>
-            <p>One of Leo's favorite things this year was .</p>
+            <p>
+              One of Leo's favorite things this year was scoring lots of goals
+              in soccer.
+            </p>
           </div>
         </div>
 
         <div class="pt-12 flex flex-col gap-10 sm:flex-row">
           <PopoutImage
+            classes="w-52"
             reverse
             src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_face,f_auto,q_90,w_400/v1/xmas-2024/chiara.webp"
           />
@@ -171,11 +203,11 @@ import PopoutImage from "../../components/PopoutImage.astro";
               and write her name. She continues to be the tiniest tot in town,
               receiving the official diagnosis of idiopathic short stature this
               year. We’ve also added pulmonology to her list of specialists
-              because of her reactive airway disease. Chiara also started
-              gymnastics, ballet, and tap classes and is the cutest ballerina in
-              all the land. She also started in the Level 1 Atrium of CGS with
-              big brother Leo. Chiara still loves purple, playing with friends,
-              and bossing around her siblings (and parents)! She turned 4 on the
+              because of her reactive airway disease. Chiara started gymnastics,
+              ballet, and tap classes and is the cutest ballerina in all the
+              land. She also started in the Level 1 Atrium of CGS with big
+              brother Leo. Chiara still loves purple, playing with friends, and
+              bossing around her siblings (and parents)! She turned 4 on the
               first day of school and enjoyed a ‘Purple’ Party with friends at
               the park. Chiara’s confidence and ability to overcome so many
               obstacles makes us so proud.
@@ -187,5 +219,5 @@ import PopoutImage from "../../components/PopoutImage.astro";
     </div>
   </section>
 
-  <Collage items={photos} year="2023" />
+  <Collage client:visible items={photos} year="2024" />
 </Layout>
