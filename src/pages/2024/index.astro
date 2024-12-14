@@ -1,0 +1,243 @@
+---
+import Layout from "../../layouts/main.astro";
+import photos from "../../data/2024.json";
+import Collage from "../../components/Collage.tsx";
+import PopoutImage from "../../components/PopoutImage.astro";
+---
+
+<Layout title="Merry Christmas">
+  <div class="grid grid-flow-row md:grid-flow-col gap-4 md:gap-10">
+    <div>
+      <h1>Merry Christmas!</h1>
+      <section class="flex-1">
+        <p class="max-w-4xl !mt-0">
+          This year we've watched more kids' sports, driven more miles to
+          activities, grown more gray hair, and found SO much joy in our family
+          and this life we're building. We are forever grateful to our friends
+          and our family: our village as we navigate the ups and downs of
+          marriage, parenthood, and (yikes!) our late thirties. Know of our
+          love, gratitude, and prayers for you now and always.
+        </p>
+        <p class="font-display text-emerald-300 text-3xl">Luke 2:13-14</p>
+        <p>Love,<br />The McBrides</p>
+        <img
+          loading="lazy"
+          class="!mt-12 w-full pointer-events-none invert block lg:hidden"
+          src="https://res.cloudinary.com/mikemcbride/image/upload/c_scale,f_auto,q_90,w_400/v1/xmas-2024/signatures.webp"
+        />
+        <img
+          loading="lazy"
+          class="!mt-12 w-full pointer-events-none invert hidden lg:block"
+          src="https://res.cloudinary.com/mikemcbride/image/upload/c_scale,f_auto,q_90,w_768/v1/xmas-2024/signatures.webp"
+        />
+      </section>
+    </div>
+    <PopoutImage
+      classes="mx-auto"
+      src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_face,f_auto,q_90,w_400/v1/xmas-2024/silly-family.webp"
+    />
+  </div>
+  <hr />
+  <section class="mb-24">
+    <div class="grid grid-cols-1 gap-x-8 gap-y-20">
+      <div class="space-y-12 divide-y divide-emerald-900">
+        <div class="pt-12 flex flex-col gap-10 sm:flex-row">
+          <PopoutImage
+            classes="w-52"
+            reverse
+            src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_face,f_auto,q_90,w_400/v1/xmas-2024/mike-and-becky.webp"
+          />
+          <div class="flex-auto">
+            <h2 class="!mt-0">Mike &amp; Becky</h2>
+            <p>
+              This year we celebrated 11 years of marriage and 16 years
+              together, which is crazy since we're still only 29 years old. We
+              have enjoyed (almost) every moment of this new phase of life with
+              all of our kids out of the baby and toddler stage. Our family
+              enjoyed a vacation to the Wisconsin Dells area and Mike and Becky
+              enjoyed their FIRST solo getaway for a weekend in Nashville this
+              Fall.
+            </p>
+
+            <p>
+              Becky's year started off rough and in the ER of Mercy South with
+              complications from a hysterectomy she had to have at the end of
+              2024 due to a serious medical diagnosis. She proceeded to spend
+              the first 2 months of 2024 in pain and (mostly) in bed. After a
+              long recovery Becky is finally feeling more like herself and has
+              enjoyed life with much less chronic symptoms and medical concerns.
+              She spent 2 weeks of her summer in formation for Level III of <a
+                href="https://www.cgsusa.org"
+                target="_blank"
+                rel="noopener noreferer">Catechesis of the Good Shepherd</a
+              >. She leads an Atrium on Tuesdays and Thursdays and is helping
+              lead the Sacramental Preparation for the CGS Program at St.
+              Clement. She continues to be the Leader for Rose's Girl Scout
+              Troop and Chiara asks her constantly when she will be her Girl
+              Scout Leader. Becky also put her RN license to work again and is a
+              private duty in-home nurse to the sweetest and most lovable 7 year
+              old girl. It has been an absolute joy for Becky to be in a nurse
+              role again and she is, much to her surprise, enjoying the home
+              health world. in the summer of 2024.
+            </p>
+
+            <p>
+              One of Becky's favorite things this year was meeting one of her
+              heroes, <a
+                href="https://sharonmcmahon.com"
+                target="_blank"
+                rel="noopener noreferer">Sharon McMahon</a
+              >.
+            </p>
+
+            <p>
+              Mike is still enjoying working for the New York Times and loves
+              that he gets to be present for so many of the kids' activities. He
+              took a week-long trip to New York this summer and loved having
+              extra time in the evenings to explore the city a little more (it
+              definitely didn't hurt that he got to do all of that with his
+              friend David). This fall he was an assistant coach for Leo's
+              soccer team (first outoor, and now indoor) and also stepped into a
+              role as the Den Leader for Leo's Cub Scout troop. Both roles have
+              been incredibly rewarding and he has loved being a mentor and
+              leader to the boys.
+            </p>
+
+            <p>
+              One of Mike's favorite things this year was that Blue Bell finally
+              started selling ice cream in St. Louis.
+            </p>
+          </div>
+        </div>
+
+        <div class="pt-12 flex flex-col gap-10 sm:flex-row">
+          <PopoutImage
+            classes="w-52"
+            src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_face,f_auto,q_90,w_400/v1/xmas-2024/rose.webp"
+          />
+          <div class="flex-auto">
+            <h2 class="!mt-0">Rose</h2>
+            <p>
+              Rose is in 4th grade and growing up faster than we would like. She
+              joined a Robotics team this year and has found a love of coding,
+              just like her dad. She continues to excel in math, and has
+              discovered a new love of writing. Her favorite genre to read and
+              write is realistic fiction and we’ve loved watching her pour her
+              creativity into her storytelling. Her favorite day of the week
+              remains to be her MOSAICS day, and we are forever grateful for the
+              gifted program and the staff at Oak Brook for helping Rose
+              navigate so many difficulties with her beautiful, chaotic 2E
+              brain. Rose has moved up to the Level III Atrium with Becky as her
+              catechist and has a deeper spirituality and prayer life than Mike
+              or Becky could ever hope for. Rose’s empathy and pure heart
+              constantly leave us in awe.
+            </p>
+            <p>
+              Some of Rose's favorite things this year were the Wisconsin vacation, learning to play Minecraft, and being pen pals with her cousin Gus.
+            </p>
+            <p>When Rose grows up, she wants to be a musician.</p>
+          </div>
+        </div>
+
+        <div class="pt-12 flex flex-col gap-10 sm:flex-row">
+          <PopoutImage
+            classes="w-52"
+            reverse
+            src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_face,f_auto,q_90,w_400/v1/xmas-2024/kolbe.webp"
+          />
+          <div class="flex-auto">
+            <h2 class="!mt-0">Kolbe</h2>
+            <p>
+              Kolbe had a banner year. He finished kindergarten in the Spring
+              and is a seasoned First Grader now. He loves reading and devours
+              chapter books quicker than we can supply them. He performed for
+              the National Federation of Music Club’s Spring Jr. Festival and
+              the NGPT’s National Guild Auditions again and did wonderfully
+              again. He also tried baseball this Spring and had a blast! Kolbe
+              spent his summer swimming for Big Bend Woods Swim Club for the
+              first time and Becky couldn’t have been happier to be a Swim Team
+              Mom. Soccer remains his first love and he’s trying basketball for
+              the first time this winter. Kolbe turned 7 in July and had a
+              Summer Olympics Birthday Party. He moved up to the Level II Atrium
+              and gets to have Becky as his CGS Catechist while he prepares for
+              his Sacraments this upcoming Spring. Kolbe is one of the most
+              self-motivated and determined humans we have ever met, and we are
+              always impressed with his goals and dreams.
+            </p>
+            <p>
+              One of Kolbe's favorite things this year was doing swim team at
+              Big Bend Woods.
+            </p>
+            <p>When Kolbe grows up, he wants to be a soccer player.</p>
+          </div>
+        </div>
+
+        <div class="pt-12 flex flex-col gap-10 sm:flex-row">
+          <PopoutImage
+            classes="w-52"
+            src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_face,f_auto,q_90,w_400/v1/xmas-2024/leo.webp"
+          />
+          <div class="flex-auto">
+            <h2 class="!mt-0">Leo</h2>
+            <p>
+              Leo is a KINDERGARTENER this year and is loving being a full-time
+              Oak Brook Eagle, just like his older siblings. He is a confident
+              reader, caring friend, and kind classmate. This Spring, he tried
+              baseball for the first time and was the quickest base runner in
+              Ballwin. He enjoyed soccer this fall, and enjoyed even more that
+              Mike was his assistant coach. Leo also gets to enjoy having Mike
+              as his Den Leader for Cub Scouts (another new adventure!). He also
+              is trying basketball for the first time this winter. Leo still
+              feels his feelings bigger than all the other McBride kids
+              combined, but we will never tire of his sweet, snuggly side. Leo
+              turned 6 on Halloween and had a Sports Party with all his friends.
+              Seeing him step up in a big brother role with Chiara at home and
+              at CGS has been a joy. Leo’s kind and caring soul melt us
+              everyday.
+            </p>
+            <p>
+              One of Leo's favorite things this year was scoring lots of goals
+              in soccer.
+            </p>
+            <p>When Leo grows up, he wants to be a soccer and baseball player.</p>
+          </div>
+        </div>
+
+        <div class="pt-12 flex flex-col gap-10 sm:flex-row">
+          <PopoutImage
+            classes="w-52"
+            reverse
+            src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_face,f_auto,q_90,w_400/v1/xmas-2024/chiara.webp"
+          />
+          <div class="flex-auto">
+            <h2 class="!mt-0">Chiara</h2>
+            <p>
+              Chiara, still affectionally called Cheech, started 4 half-days of
+              preschool this year and absolutely LOVES it. She is especially
+              excited to have the same preschool teacher that taught all of her
+              siblings. Her most recent accomplishment is being able to spell
+              and write her name. She continues to be the tiniest tot in town,
+              receiving the official diagnosis of idiopathic short stature this
+              year. We’ve also added pulmonology to her list of specialists
+              because of her reactive airway disease. Chiara started gymnastics,
+              ballet, and tap classes and is the cutest ballerina in all the
+              land. She also started in the Level 1 Atrium of CGS with big
+              brother Leo. Chiara still loves purple, playing with friends, and
+              bossing around her siblings (and parents)! She turned 4 on the
+              first day of school and enjoyed a ‘Purple’ Party with friends at
+              the park. Chiara’s confidence and ability to overcome so many
+              obstacles makes us so proud.
+            </p>
+            <p>
+              One of Chiara's favorite things this year was swimming a lot this
+              summer.
+            </p>
+            <p>When Chiara grows up, she wants to be a "trash-trucker" and a dragon saver.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <Collage client:visible items={photos} year="2024" />
+</Layout>

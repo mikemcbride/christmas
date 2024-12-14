@@ -1,0 +1,15 @@
+---
+const { src, reverse, classes } = Astro.props;
+---
+
+<div class={`relative flex-none ${classes}`}>
+  <div
+    class={`z-0 absolute aspect-[4/5] w-full rounded-2xl bg-red-400 shadow-inner shadow-red-800 transform ${reverse ? "rotate-3" : "-rotate-3"}`}
+  >
+  </div>
+  <img
+    class={`z-10 relative aspect-[4/5] w-full flex-none rounded-2xl object-cover self-start ring-1 ring-emerald-50 ring-opacity-30 transform ${reverse ? "-rotate-3" : "rotate-3"}`}
+    src={src}
+    alt=""
+  />
+</div>
