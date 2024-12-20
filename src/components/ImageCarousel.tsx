@@ -38,7 +38,7 @@ export default function ImageCarousel(props: PropTypes) {
         }
     }
     return (
-        <div className="h-screen w-screen fixed inset-0 flex flex-col items-center justify-center z-30">
+        <div className="font-sans h-screen w-screen fixed inset-0 flex flex-col items-center justify-center z-30">
             <button className="h-screen w-screen absolute inset-0 z-0 bg-emerald-900 bg-opacity-90" onClick={props.handleClose}></button>
             <div className="relative flex gap-6 items-center justify-center flex-col px-4">
                 <div className="flex w-full justify-end">

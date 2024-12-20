@@ -18,6 +18,12 @@ module.exports = {
           "Helvetica Neue",
           "sans-serif",
         ],
+        serif: [
+          "Vollkorn",
+          "ui-serif",
+          "Georgia",
+          "serif"
+        ],
         display: [
           "DM Serif Display",
           "system-ui",
