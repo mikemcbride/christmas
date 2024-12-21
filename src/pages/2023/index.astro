@@ -1,6 +1,6 @@
 ---
 import Layout from "../../layouts/main.astro";
-import photos from "../../data/2024.json";
+import photos from "../../data/2023.json";
 import Collage from "../../components/Collage.tsx";
 ---
 
@@ -184,6 +184,6 @@ import Collage from "../../components/Collage.tsx";
       </div>
     </div>
   </section>
+  <Collage client:visible items={photos} year="2023" />
 </Layout>
 
-<Collage client:visible items={photos} year="2023" />
