@@ -3,15 +3,19 @@ type CfImageTypes = {
   classes?: string
   is_bw?: boolean
   width?: number
+  height?: number
 }
-export default function CfImage({ image, classes, is_bw, width }: CfImageTypes) {
+export default function CfImage({ image, classes, is_bw, width, height }: CfImageTypes) {
 
-  let options = ['fit=scale-down', 'f-webp', 'q=90']
-  if (!is_bw) {
+  let options = ['fit=cover', 'g=face', 'f=webp', 'q=90']
+  if (is_bw) {
     options.push('saturation=0')
   }
   if (width) {
     options.push(`w=${width}`)
+  }
+  if (height) {
+    options.push(`h=${height}`)
   }
   let imageSrc = `https://christmas.mcbrides.us/cdn-cgi/image/${options.join(',')}/https://christmas.r2.mcbrides.us/${image}`
 

@@ -2,6 +2,7 @@
 import Layout from "../../layouts/main.astro";
 import photos from "../../data/2020.json";
 import Collage from "../../components/Collage.tsx";
+import CfImage from "../../components/CfImage.tsx";
 ---
 
 <Layout title="Merry Christmas">
@@ -22,12 +23,8 @@ import Collage from "../../components/Collage.tsx";
     poster="/img/2020/message_placeholder.png"
   >
     <source
-      src="https://res.cloudinary.com/mikemcbride/video/upload/c_scale,f_auto,w_768/v1/xmas-2020/xmas-messaage.mp4"
+      image="https://christmas.r2.mcbrides.us/2020/xmas-messaage.mov"
       type="video/mp4"
-    />
-    <source
-      src="https://res.cloudinary.com/mikemcbride/video/upload/c_scale,f_auto,w_768/v1/xmas-2020/xmas-messaage.webm"
-      type="video/webm"
     />
     Sorry, your browser doesn't support embedded videos.
   </video>
@@ -40,11 +37,7 @@ import Collage from "../../components/Collage.tsx";
     poster="/img/2020/kids_placeholder.png"
   >
     <source
-      src="https://res.cloudinary.com/mikemcbride/video/upload/c_scale,f_auto,w_768/v1/xmas-2020/kids.mp4"
-      type="video/mp4"
-    />
-    <source
-      src="https://res.cloudinary.com/mikemcbride/video/upload/c_scale,f_auto,w_768/v1/xmas-2020/kids.webm"
+      image="https://christmas.r2.mcbrides.us/2020/kids.mov"
       type="video/webm"
     />
     Sorry, your browser doesn't support embedded videos.
@@ -53,41 +46,36 @@ import Collage from "../../components/Collage.tsx";
   <section>
     <div class="flex flex-col sm:flex-row gap-2">
       <div class="sm:flex-1">
-        <img
-          loading="lazy"
-          class="w-full pointer-events-none"
-          src="https://res.cloudinary.com/mikemcbride/image/upload/c_scale,f_auto,q_90,w_400/v1/xmas-2020/piano.webp"
+        <CfImage
+          classes="w-full pointer-events-none"
+          image="2020/piano.jpg"
         />
       </div>
       <div class="sm:flex-1">
-        <img
-          loading="lazy"
-          class="w-full pointer-events-none"
-          src="https://res.cloudinary.com/mikemcbride/image/upload/c_scale,f_auto,q_90,w_400/v1/xmas-2020/xmas_jammies.webp"
+        <CfImage
+          classes="w-full pointer-events-none"
+          image="2020/xmas_jammies.jpg"
         />
       </div>
       <div class="sm:flex-1">
-        <img
-          loading="lazy"
-          class="w-full pointer-events-none"
-          src="https://res.cloudinary.com/mikemcbride/image/upload/c_scale,f_auto,q_90,w_400/v1/xmas-2020/fam_study.webp"
+        <CfImage
+          classes="w-full pointer-events-none"
+          image="2020/fam_study.jpg"
         />
       </div>
     </div>
     <h2>Some 2020 Updates</h2>
     <div class="flex flex-col sm:flex-row gap-2 -mb-4">
       <div class="sm:w-2/3">
-        <img
-          loading="lazy"
-          class="w-full pointer-events-none"
-          src="https://res.cloudinary.com/mikemcbride/image/upload/c_scale,f_auto,q_90,w_400/v1/xmas-2020/porch_fam.webp"
+        <CfImage
+          classes="w-full pointer-events-none"
+          image="2020/porch_fam.jpg"
         />
       </div>
       <div class="sm:w-1/3">
-        <img
-          loading="lazy"
-          class="w-full pointer-events-none"
-          src="https://res.cloudinary.com/mikemcbride/image/upload/c_scale,f_auto,q_90,w_400/v1/xmas-2020/fall_porch.webp"
+        <CfImage
+          classes="w-full pointer-events-none"
+          image="2020/fall_porch.jpg"
         />
       </div>
     </div>
@@ -99,10 +87,10 @@ import Collage from "../../components/Collage.tsx";
   </section>
   <section>
     <div class="my-12 flex flex-col sm:flex-row gap-6">
-      <img
-        loading="lazy"
-        class="!mt-2 w-full sm:w-48 sm:h-48 object-cover flex-shrink-0 pointer-events-none"
-        src="https://res.cloudinary.com/mikemcbride/image/upload/c_scale,f_auto,q_90,w_400/v1/xmas-2020/mike.webp"
+      <CfImage
+        classes="!mt-2 w-full sm:w-48 sm:h-48 object-cover flex-shrink-0 pointer-events-none"
+        image="2020/mike.jpg"
+        width={200}
       />
       <p class="!mt-0 flex-1">
         Mike started working from home full-time in March, and the family is
@@ -120,18 +108,18 @@ import Collage from "../../components/Collage.tsx";
         really long Netflix binges (we're still not sure how Mike survived
         during any of that).
       </p>
-      <img
-        loading="lazy"
-        class="!mt-2 w-full order-first sm:order-last sm:w-48 sm:h-48 object-cover flex-shrink-0 pointer-events-none"
-        src="https://res.cloudinary.com/mikemcbride/image/upload/c_scale,f_auto,q_90,w_400/v1/xmas-2020/becky.webp"
+      <CfImage
+        classes="!mt-2 w-full order-first sm:order-last sm:w-48 sm:h-48 object-cover flex-shrink-0 pointer-events-none"
+        image="2020/becky.jpg"
+        width={200}
       />
     </div>
 
     <div class="my-12 flex flex-col sm:flex-row gap-6">
-      <img
-        loading="lazy"
-        class="!mt-2 w-full sm:w-48 sm:h-48 object-cover flex-shrink-0 pointer-events-none"
-        src="https://res.cloudinary.com/mikemcbride/image/upload/c_scale,f_auto,q_90,w_400/v1/xmas-2020/rose.webp"
+      <CfImage
+        classes="!mt-2 w-full sm:w-48 sm:h-48 object-cover flex-shrink-0 pointer-events-none"
+        image="2020/rose.jpg"
+        width={200}
       />
       <p class="!mt-0 flex-1">
         Rose began her kindergarten year (fully homeschooled) and is loving
@@ -149,18 +137,18 @@ import Collage from "../../components/Collage.tsx";
         loves anything as long as it's the color red, and plans to spend 2021
         learning to ride a bike.
       </p>
-      <img
-        loading="lazy"
-        class="!mt-2 w-full order-first sm:order-last sm:w-48 sm:h-48 object-cover flex-shrink-0 pointer-events-none"
-        src="https://res.cloudinary.com/mikemcbride/image/upload/c_scale,f_auto,q_90,w_400/v1/xmas-2020/kolbe.webp"
+      <CfImage
+        classes="!mt-2 w-full order-first sm:order-last sm:w-48 sm:h-48 object-cover flex-shrink-0 pointer-events-none"
+        image="2020/kolbe.jpg"
+        width={200}
       />
     </div>
 
     <div class="my-12 flex flex-col sm:flex-row gap-6">
-      <img
-        loading="lazy"
-        class="!mt-2 w-full sm:w-48 sm:h-48 object-cover flex-shrink-0 pointer-events-none"
-        src="https://res.cloudinary.com/mikemcbride/image/upload/c_scale,f_auto,q_90,w_400/v1/xmas-2020/leo.webp"
+      <CfImage
+        classes="!mt-2 w-full sm:w-48 sm:h-48 object-cover flex-shrink-0 pointer-events-none"
+        image="2020/leo.jpg"
+        width={200}
       />
       <p class="!mt-0 flex-1">
         Leo switched from baby to toddler overnight and we're not sure why that
@@ -179,10 +167,10 @@ import Collage from "../../components/Collage.tsx";
         absolute miracle of a baby. We've lost a lot of sleep over her, but
         she's been worth every worry.
       </p>
-      <img
-        loading="lazy"
-        class="!mt-2 w-full order-first sm:order-last sm:w-48 sm:h-48 object-cover flex-shrink-0 pointer-events-none"
-        src="https://res.cloudinary.com/mikemcbride/image/upload/c_scale,f_auto,q_90,w_400/v1/xmas-2020/chiara.webp"
+      <CfImage
+        classes="!mt-2 w-full order-first sm:order-last sm:w-48 sm:h-48 object-cover flex-shrink-0 pointer-events-none"
+        image="2020/chiara.jpg"
+        width={200}
       />
     </div>
 
