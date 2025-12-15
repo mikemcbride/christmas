@@ -1,12 +1,8 @@
 ---
 const { year } = Astro.props;
 let years = [];
-// conditionally add the current year to the footer
-if (Astro.url.pathname !== "/" && Astro.url.pathname !== `/${year}`) {
-  years.push(year);
-}
-// add all other years to the footer
-for (let i = year - 1; i >= 2020; i--) {
+// add all years to the footer
+for (let i = year; i >= 2020; i--) {
   years.push(i);
 }
 ---
