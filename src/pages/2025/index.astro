@@ -1,0 +1,136 @@
+---
+import Layout from "../../layouts/main.astro";
+import photos from "../../data/2025.json";
+import Collage from "../../components/Collage.tsx";
+import PopoutImage from "../../components/PopoutImage.astro";
+---
+
+<Layout title="Merry Christmas">
+  <div class="grid grid-flow-row md:grid-flow-col gap-4 md:gap-10">
+    <div>
+      <h1>Merry Christmas!</h1>
+      <section class="flex-1">
+        <p class="max-w-4xl !mt-0">
+            This year our memories, our joy, our challenges, and our experiences are all separated by the time Before and the time After Mike’s stroke. Through everything, we’ve gained more trust, more hope, and more humility. We’ve been carried through the hardest of days by our faith, our family, and our friends. Light always wins.
+        </p>
+        <p class="max-w-4xl !mt-0">Know of our constant love and gratitude for each of you.</p>
+        </p>
+        <p>Love,<br />The McBrides</p>
+        <p class="!mt-0 font-display text-emerald-300 text-3xl">Luke 1:37</p>
+      </section>
+    </div>
+    <PopoutImage
+      classes="mx-auto"
+      src="2025/cute_fam.jpg"
+      imgWidth={430}
+    />
+  </div>
+  <hr />
+  <section class="mb-24">
+    <div class="grid grid-cols-1 gap-x-8 gap-y-20">
+      <div class="space-y-12 divide-y divide-emerald-900">
+        <div class="pt-12 flex flex-col gap-10 sm:flex-row">
+          <PopoutImage
+            classes="w-52"
+            src="2025/mike-becky.jpg"
+            imgWidth={220}
+          />
+          <div class="flex-auto">
+            <h2 class="!mt-0">Mike &amp; Becky</h2>
+            <p>
+While the stroke was clearly the biggest event of 2025, it was still a huge year with actual fun things too! Kolbe joined SLSG in February and Mike was the head coach for his team. This was such a fun experience, and they ended the fall season with a 9-0 record! He also assistant coached both boys baseball teams in the spring and was an assistant for both boys CYC soccer teams this fall (they both won their fall soccer leagues). Being able to coach them and their friends has been a truly rewarding experience. He also worked on a couple of big side projects this year and got to meet two new friends through this work who he really enjoys and worked really well with - he is looking forward to much more of that in the future as well. Getting to balance his day-job work at the Times with fun side projects where he can try new things was very rewarding.
+            </p>
+            <p>
+The highlight of his year was getting to work on a huge side project to rebuild a website that reaches hundreds of thousands of people (it must remain unnamed - but you’ve probably heard of it).
+            </p>
+            <p>
+              In 2026, he's looking forward to not having a stroke, continuing to recover, sleeping more, and spending more time with family. When he grows up, Mike wants to be a superhero doctor who helps people not have strokes (jk, he wants to be a computer guy).
+            </p>
+            <p>
+                Becky had a busy year! She continues to work with her same sweet patient in the home health setting, serves as a catechist 2 evenings a week for Catechesis of the Good Shepherd, volunteers on the kids’ school’s PTO board, and is Rose’s Girl Scout leader. Between managing the kid’s activities, carpooling them around town, and helping Mike navigate through deficits of his stroke, she still found time to enjoy a few good books and redecorate a few spaces in the home. She finished certification as a Level III Catechist with CGS, closing the chapter on her formation for a while (after 100s of hours!). While discerning where God is leading her next as a Nurse and as a Catechist, she started a few online college classes to work towards a new degree. She is proud to say she is still an overachiever and will be walking away with a 4.0 from her 19 credit hours. 
+            </p>
+            <p>
+Being on the sidelines to cheer for Rose, Kolbe, Leo and Chiara is still her favorite place to be. The best memories of the year were moments watching her kids show their passion and work towards goals, whether it was on the field, in school, on an instrument, or in a Robotics match. 
+            </p>
+            <p>
+Becky’s favorite thing this year was seeing Mike recover from his stroke. She’s hoping for more sleep and less chaos in 2026, and is still deciding what she wants to be when she grows up.
+            </p>
+          </div>
+        </div>
+
+        <div class="pt-12 flex flex-col gap-10 sm:flex-row">
+          <PopoutImage
+            classes="w-52"
+            reverse
+            src="2025/rose.jpg"
+            imgWidth={220}
+          />
+          <div class="flex-auto">
+            <h2 class="!mt-0">Rose</h2>
+            <p>
+Rose’s Robotics Team has had 2 competitions since last Christmas and walked away from both with a 1st place trophy! Seeing her grow and thrive with her team and her coaches has been a joy for the whole family.  This summer, Rose tried swim team for the first time. Her perseverance, even while being years behind her peers, was admirable and we’re so proud of her! She continues to play the piano and cello, and she also was selected to be a part of the All-District Choir performance this year, in addition to regular school choir. She is in 5th grade and we can’t believe her years in elementary school are coming to a close. Rose has been praying and discerning what she would like to do for Middle School, and we have been praying and supporting her through it every step of the way. 
+            </p>
+            <p>
+Rose’s favorite thing this year was traveling to Huntsville, AL in July to go to Space Camp. When she grows up she wants to be a musician, a YouTuber, an author, and a paleontologist. 
+            </p>
+          </div>
+        </div>
+
+        <div class="pt-12 flex flex-col gap-10 sm:flex-row">
+          <PopoutImage
+            classes="w-52"
+            src="2025/kolbe.jpg"
+            imgWidth={220}
+          />
+          <div class="flex-auto">
+            <h2 class="!mt-0">Kolbe</h2>
+            <p>
+Kolbe continues to move at 100mph and shows more determination than any kids we’ve ever seen. His strong desire to work hard and improve his soccer skills landed him on a SLSG soccer team, with Mike helping coach. Kolbe continued to play basketball, baseball and swim for the swim team this summer. His relay team broke the record for his age group and he can’t wait to be back in the pool next summer. He continues to play piano and his talent amazes us all. This spring he received his First Reconciliation and First Communion, and he has had so much joy since then. We can’t believe he’s already a seasoned 2nd grader!
+            </p>
+            <p>
+Kolbe’s favorite thing this year was playing on all his sports teams, joining SLSG, and meeting the players after a St. Louis City2 soccer game. When he grows up, he wants to be a soccer player. 
+            </p>
+          </div>
+        </div>
+
+        <div class="pt-12 flex flex-col gap-10 sm:flex-row">
+          <PopoutImage
+            classes="w-52"
+            reverse
+            src="2025/leo.jpg"
+            imgWidth={220}
+          />
+          <div class="flex-auto">
+            <h2 class="!mt-0">Leo</h2>
+            <p>
+Leo had a great year finishing off kindergarten and is now enjoying first grade. If you see him, chances are he will be decked out in a full soccer kit, his attire of choice. He also started on an SLSG soccer team this year, as well as playing basketball and baseball. He tried out the swim team, which was way out of his comfort zone, but pushed through nerves and ended the season most improved for his age group. He is starting to learn piano with the same wonderful teacher as Rose and Kolbe. He also has begun preparing for his Sacraments, which he will receive in the Spring, with Becky as his lead catechist. 
+            </p>
+            <p>
+Leo says his favorite thing this year was “everything!”. He wants to be a soccer player when he grows up. 
+            </p>
+          </div>
+        </div>
+
+        <div class="pt-12 flex flex-col gap-10 sm:flex-row">
+          <PopoutImage
+            classes="w-52"
+            src="2025/chiara.jpg"
+            imgWidth={220}
+          />
+          <div class="flex-auto">
+            <h2 class="!mt-0">Chiara</h2>
+            <p>
+Our pocket-sized FIVE year old continues to light up (and boss around) any room she enters. Chiara had her first dance recital this summer and already performed this winter in a showcase. She didn’t stop talking about her makeup and curled hair for weeks. She is in her 2nd year of preschool and absolutely loves learning and spending time with her friends. While she hasn’t grown much physically, her personality and her brain are bigger than life. Chiara asks questions constantly, smiles bigger than anyone we know, and is still a champ through all of her doctor’s appointments. We have no updates on her chromosomal syndrome, we are still working with endocrinology to explore medical treatments, and her eye doctor and pulmonologist continue to have great check-ups. Cheech is the silliest, sassiest, sweetest of kids and everyone loves snuggling her.
+            </p>
+            <p>
+Chiara’s favorite thing this year was spending time together for all of the holidays. She wants to be a superhero dragon helper (but not on Thursdays - that's trash day) and a trash trucker when she grows up. 
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <Collage client:visible items={photos} year="2025" />
+</Layout>
+

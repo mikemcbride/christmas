@@ -3,6 +3,7 @@ import Layout from "../../layouts/main.astro";
 import photos from "../../data/2024.json";
 import Collage from "../../components/Collage.tsx";
 import PopoutImage from "../../components/PopoutImage.astro";
+import CfImage from "../../components/CfImage.tsx";
 ---
 
 <Layout title="Merry Christmas">
@@ -20,21 +21,22 @@ import PopoutImage from "../../components/PopoutImage.astro";
         </p>
         <p class="font-display text-emerald-300 text-3xl">Luke 2:13-14</p>
         <p>Love,<br />The McBrides</p>
-        <img
-          loading="lazy"
-          class="!mt-12 w-full pointer-events-none invert block lg:hidden"
-          src="https://res.cloudinary.com/mikemcbride/image/upload/c_scale,f_auto,q_90,w_400/v1/xmas-2024/signatures.webp"
+        <CfImage
+          classes="!mt-12 w-full pointer-events-none invert block lg:hidden"
+          image="2024/signatures.webp"
+          width={400}
         />
-        <img
-          loading="lazy"
-          class="!mt-12 w-full pointer-events-none invert hidden lg:block"
-          src="https://res.cloudinary.com/mikemcbride/image/upload/c_scale,f_auto,q_90,w_768/v1/xmas-2024/signatures.webp"
+        <CfImage
+          classes="!mt-12 w-full pointer-events-none invert hidden lg:block"
+          image="2024/signatures.webp"
+          width={768}
         />
       </section>
     </div>
     <PopoutImage
       classes="mx-auto"
-      src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_face,f_auto,q_90,w_400/v1/xmas-2024/silly-family.webp"
+      src="2024/silly-family.jpg"
+      imgWidth={430}
     />
   </div>
   <hr />
@@ -45,7 +47,8 @@ import PopoutImage from "../../components/PopoutImage.astro";
           <PopoutImage
             classes="w-52"
             reverse
-            src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_face,f_auto,q_90,w_400/v1/xmas-2024/mike-and-becky.webp"
+            src="2024/mike-and-becky.jpg"
+            imgWidth={220}
           />
           <div class="flex-auto">
             <h2 class="!mt-0">Mike &amp; Becky</h2>
@@ -118,7 +121,8 @@ import PopoutImage from "../../components/PopoutImage.astro";
         <div class="pt-12 flex flex-col gap-10 sm:flex-row">
           <PopoutImage
             classes="w-52"
-            src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_face,f_auto,q_90,w_400/v1/xmas-2024/rose.webp"
+            src="2024/rose.jpg"
+            imgWidth={220}
           />
           <div class="flex-auto">
             <h2 class="!mt-0">Rose</h2>
@@ -153,7 +157,8 @@ import PopoutImage from "../../components/PopoutImage.astro";
           <PopoutImage
             classes="w-52"
             reverse
-            src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_face,f_auto,q_90,w_400/v1/xmas-2024/kolbe.webp"
+            src="2024/kolbe.jpg"
+            imgWidth={220}
           />
           <div class="flex-auto">
             <h2 class="!mt-0">Kolbe</h2>
@@ -185,7 +190,8 @@ import PopoutImage from "../../components/PopoutImage.astro";
         <div class="pt-12 flex flex-col gap-10 sm:flex-row">
           <PopoutImage
             classes="w-52"
-            src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_face,f_auto,q_90,w_400/v1/xmas-2024/leo.webp"
+            src="2024/leo.jpg"
+            imgWidth={220}
           />
           <div class="flex-auto">
             <h2 class="!mt-0">Leo</h2>
@@ -219,7 +225,8 @@ import PopoutImage from "../../components/PopoutImage.astro";
           <PopoutImage
             classes="w-52"
             reverse
-            src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_face,f_auto,q_90,w_400/v1/xmas-2024/chiara.webp"
+            src="2024/chiara.jpg"
+            imgWidth={220}
           />
           <div class="flex-auto">
             <h2 class="!mt-0">Chiara</h2>

@@ -2,6 +2,7 @@ import { useEffect } from 'preact/hooks';
 import ArrowIconRight from "./ArrowIconRight.tsx";
 import ArrowIconLeft from "./ArrowIconLeft.tsx";
 import IconClose from "./IconClose.tsx";
+import CfImage from './CfImage.tsx';
 
 type CarouselItem = {
     name: string
@@ -46,8 +47,11 @@ export default function ImageCarousel(props: PropTypes) {
                         <IconClose className="h-8 w-8" />
                     </button>
                 </div>
-                <img className="pointer-events-none max-w-full ring-4 ring-emerald-200 ring-opacity-60"
-                    src={`https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_faces:center,h_600,q_90,w_600,f_auto${props.activeItem.is_bw ? '' : '/e_grayscale'}/v1/xmas-${props.year}/collage/${props.activeItem.name}.webp`} />
+                <CfImage classes="pointer-events-none max-w-full ring-4 ring-emerald-200 ring-opacity-60"
+                    is_bw={!props.activeItem.is_bw}
+                    height={600}
+                    width={600}
+                    image={`${props.year}/collage/${props.activeItem.name}`} />
                 <div className="flex items-center justify-between w-full mx-auto">
                     <button onClick={props.handlePrev}
                         className="inline-flex items-center gap-2 text-white rounded-lg text-sm px-3 py-2 opacity-80 hover:opacity-100 bg-emerald-700 bg-opacity-50 focus:outline-none focus:ring focus:ring-emerald-400">

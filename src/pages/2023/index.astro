@@ -2,6 +2,7 @@
 import Layout from "../../layouts/main.astro";
 import photos from "../../data/2023.json";
 import Collage from "../../components/Collage.tsx";
+import CfImage from "../../components/CfImage.tsx";
 ---
 
 <Layout title="Merry Christmas">
@@ -19,10 +20,10 @@ import Collage from "../../components/Collage.tsx";
     <div class="grid grid-cols-1 gap-x-8 gap-y-20">
       <div class="space-y-12 divide-y divide-emerald-900">
         <div class="pt-12 flex flex-col gap-10 sm:flex-row">
-          <img
-            class="aspect-[4/5] w-52 flex-none rounded-2xl object-cover self-start"
-            src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_face,f_auto,q_90,w_400/v1/xmas-2023/mike-and-becky.webp"
-            alt=""
+          <CfImage
+            classes="aspect-[4/5] w-52 flex-none rounded-2xl object-cover self-start"
+            image="2023/mike-and-becky.webp"
+            width={220}
           />
           <div class="flex-auto">
             <h2 class="!mt-0">Mike &amp; Becky</h2>
@@ -69,11 +70,11 @@ import Collage from "../../components/Collage.tsx";
       </div>
 
       <div class="pt-12 flex flex-col gap-10 sm:flex-row">
-        <img
-          class="aspect-[4/5] w-52 flex-none rounded-2xl object-cover self-start"
-          src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_face,f_auto,q_90,w_400/v1/xmas-2023/rose.webp"
-          alt=""
-        />
+          <CfImage
+            classes="aspect-[4/5] w-52 flex-none rounded-2xl object-cover self-start"
+            image="2023/rose.webp"
+            width={220}
+          />
         <div class="flex-auto">
           <h2 class="!mt-0">Rose</h2>
           <p>
@@ -99,11 +100,11 @@ import Collage from "../../components/Collage.tsx";
       </div>
 
       <div class="pt-12 flex flex-col gap-10 sm:flex-row">
-        <img
-          class="aspect-[4/5] w-52 flex-none rounded-2xl object-cover self-start"
-          src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_face,f_auto,q_90,w_400/v1/xmas-2023/kolbe.webp"
-          alt=""
-        />
+          <CfImage
+            classes="aspect-[4/5] w-52 flex-none rounded-2xl object-cover self-start"
+            image="2023/kolbe.webp"
+            width={220}
+          />
         <div class="flex-auto">
           <h2 class="!mt-0">Kolbe</h2>
           <p>
@@ -126,11 +127,11 @@ import Collage from "../../components/Collage.tsx";
       </div>
 
       <div class="pt-12 flex flex-col gap-10 sm:flex-row">
-        <img
-          class="aspect-[4/5] w-52 flex-none rounded-2xl object-cover self-start"
-          src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_face,f_auto,q_90,w_400/v1/xmas-2023/leo.webp"
-          alt=""
-        />
+          <CfImage
+            classes="aspect-[4/5] w-52 flex-none rounded-2xl object-cover self-start"
+            image="2023/leo.webp"
+            width={220}
+          />
         <div class="flex-auto">
           <h2 class="!mt-0">leo</h2>
           <p>
@@ -154,11 +155,11 @@ import Collage from "../../components/Collage.tsx";
       </div>
 
       <div class="pt-12 flex flex-col gap-10 sm:flex-row">
-        <img
-          class="aspect-[4/5] w-52 flex-none rounded-2xl object-cover self-start"
-          src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_face,f_auto,q_90,w_400/v1/xmas-2023/chiara.webp"
-          alt=""
-        />
+          <CfImage
+            classes="aspect-[4/5] w-52 flex-none rounded-2xl object-cover self-start"
+            image="2023/chiara.webp"
+            width={220}
+          />
         <div class="flex-auto">
           <h2 class="!mt-0">chiara</h2>
           <p>

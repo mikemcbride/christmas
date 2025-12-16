@@ -1,6 +1,7 @@
 import { Fragment } from 'preact';
 import { useState } from 'preact/hooks';
 
+import CfImage from './CfImage.tsx';
 import ImageCarousel from './ImageCarousel.tsx';
 
 export default function Collage({ items, year }) {
@@ -43,8 +44,12 @@ export default function Collage({ items, year }) {
                     return <button key={idx}
                         className="focus:outline-none focus:ring focus:ring-emerald-500 dark:focus:ring-red-500 rounded-lg"
                         onClick={() => showCarousel(idx)}>
-                        <img loading="lazy" className="pointer-events-none opacity-80"
-                            src={`https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_faces:center,h_600,q_90,w_600,f_auto${item.is_bw ? '' : '/e_grayscale'}/v1/xmas-${year}/collage/${item.name}.webp`} />
+                        <CfImage classes="pointer-events-none opacity-80"
+                            is_bw={!item.is_bw}
+                            image={`${year}/collage/${item.name}`}
+                            width={600}
+                            height={600}
+                        />
                     </button>
                 })}
             </section>

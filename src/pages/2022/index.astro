@@ -2,6 +2,7 @@
 import Layout from "../../layouts/main.astro";
 import photos from "../../data/2022.json";
 import Collage from "../../components/Collage.tsx";
+import CfImage from "../../components/CfImage.tsx";
 ---
 
 <Layout title="Merry Christmas">
@@ -18,25 +19,24 @@ import Collage from "../../components/Collage.tsx";
       and smiles.
     </p>
     <p>Love,<br />The McBrides</p>
-    <img
-      loading="lazy"
-      class="!mt-12 w-full pointer-events-none invert block lg:hidden"
-      src="https://res.cloudinary.com/mikemcbride/image/upload/c_scale,f_auto,q_90,w_400/v1/xmas-2022/signatures.webp"
+    <CfImage
+      classes="!mt-12 w-full pointer-events-none invert block lg:hidden"
+      image="2022/signatures.webp"
+      width={400}
     />
-    <img
-      loading="lazy"
-      class="!mt-12 w-full pointer-events-none invert hidden lg:block"
-      src="https://res.cloudinary.com/mikemcbride/image/upload/c_scale,f_auto,q_90,w_768/v1/xmas-2022/signatures.webp"
+    <CfImage
+      classes="!mt-12 w-full pointer-events-none invert hidden lg:block"
+      image="2022/signatures.webp"
+      width={768}
     />
   </section>
   <hr />
   <section>
     <h2>Mike</h2>
     <div class="my-12">
-      <img
-        loading="lazy"
-        class="float-left !mt-2 !mr-4 !mb-1 w-full sm:w-48 sm:h-48 object-cover pointer-events-none"
-        src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_face,f_auto,q_90,w_400/v1/xmas-2022/mike.webp"
+      <CfImage
+        classes="float-left !mt-2 !mr-4 !mb-1 w-full sm:w-48 sm:h-48 object-cover pointer-events-none"
+        image="2022/mike.webp"
       />
       <p class="!mt-0 flex-1 text-justify">
         Mike continued working from home this year, and still loves it. After
@@ -57,10 +57,9 @@ import Collage from "../../components/Collage.tsx";
 
     <h2>Becky</h2>
     <div class="my-12">
-      <img
-        loading="lazy"
-        class="float-right !mt-2 !ml-4 !mb-1 w-full order-first sm:order-last sm:w-48 sm:h-48 object-cover pointer-events-none"
-        src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_face,f_auto,q_90,w_400/v1/xmas-2022/becky.webp"
+      <CfImage
+        classes="float-right !mt-2 !ml-4 !mb-1 w-full order-first sm:order-last sm:w-48 sm:h-48 object-cover pointer-events-none"
+        image="2022/becky.webp"
       />
       <p class="!mt-0 flex-1 text-justify">
         Becky finished her certification for Level II of <a
@@ -81,10 +80,9 @@ import Collage from "../../components/Collage.tsx";
 
     <h2>Rose</h2>
     <div class="my-12">
-      <img
-        loading="lazy"
-        class="float-left !mt-2 !mr-4 !mb-1 w-full sm:w-48 sm:h-48 object-cover pointer-events-none"
-        src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_face,f_auto,q_90,w_400/v1/xmas-2022/rose.webp"
+      <CfImage
+        classes="float-left !mt-2 !mr-4 !mb-1 w-full sm:w-48 sm:h-48 object-cover pointer-events-none"
+        image="2022/rose.jpg"
       />
       <p class="!mt-0 flex-1 text-justify">
         Rose is a second grader, is joyfully preparing for her Sacraments, and
@@ -105,10 +103,9 @@ import Collage from "../../components/Collage.tsx";
 
     <h2>Kolbe</h2>
     <div class="my-12">
-      <img
-        loading="lazy"
-        class="float-right !mt-2 !ml-4 !mb-1 w-full order-first sm:order-last sm:w-48 sm:h-48 object-cover pointer-events-none"
-        src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_face,f_auto,q_90,w_400/v1/xmas-2022/kolbe.webp"
+      <CfImage
+        classes="float-right !mt-2 !ml-4 !mb-1 w-full order-first sm:order-last sm:w-48 sm:h-48 object-cover pointer-events-none"
+        image="2022/kolbe.jpg"
       />
       <p class="!mt-0 flex-1 text-justify">
         Kolbe is enjoying his second year of preschool, loves learning, and is
@@ -125,10 +122,9 @@ import Collage from "../../components/Collage.tsx";
 
     <h2>Leo</h2>
     <div class="my-12">
-      <img
-        loading="lazy"
-        class="float-left !mt-2 !mr-4 !mb-1 w-full sm:w-48 sm:h-48 object-cover pointer-events-none"
-        src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_face,f_auto,q_90,w_400/v1/xmas-2022/leo.webp"
+      <CfImage
+        classes="float-left !mt-2 !mr-4 !mb-1 w-full sm:w-48 sm:h-48 object-cover pointer-events-none"
+        image="2022/leo.jpg"
       />
       <p class="!mt-0 flex-1 text-justify">
         Leo started preschool this year and gets to be in the same classroom as
@@ -145,10 +141,9 @@ import Collage from "../../components/Collage.tsx";
 
     <h2>Chiara</h2>
     <div class="my-12">
-      <img
-        loading="lazy"
-        class="float-right !mt-2 !ml-4 !mb-1 w-full order-first sm:order-last sm:w-48 sm:h-48 object-cover pointer-events-none"
-        src="https://res.cloudinary.com/mikemcbride/image/upload/c_fill,g_face,f_auto,q_90,w_400/v1/xmas-2022/chiara.webp"
+      <CfImage
+        classes="float-right !mt-2 !ml-4 !mb-1 w-full order-first sm:order-last sm:w-48 sm:h-48 object-cover pointer-events-none"
+        image="2022/chiara.jpg"
       />
       <p class="!mt-0 flex-1 text-justify">
         Chiara is the tiniest and mightiest member of the McBride clan. Early
